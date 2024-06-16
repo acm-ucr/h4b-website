@@ -1,5 +1,5 @@
-const Support = () => {
+const Page = () => {
   return <>Hello World</>;
 };
 
-export default Support;
+export default Page;
