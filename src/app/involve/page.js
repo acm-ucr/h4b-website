@@ -1,5 +1,5 @@
-const Involve = () => {
+const Page = () => {
   return <>Hello World</>;
 };
 
-export default Involve;
+export default Page;
