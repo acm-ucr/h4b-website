@@ -1,3 +1,3 @@
-const About = () => {};
+const Goal = () => {};
 
-export default About;
+export default Goal;
