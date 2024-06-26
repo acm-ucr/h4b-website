@@ -8,6 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inika: ["var(--font-inika)"],
+        shrikhand: ["var(--font-shrikhand)"],
+        omc: ["var(--font-omc)"],
+      },
       colors: {
         biscuits: {
           peach: "#FFEBE0",
