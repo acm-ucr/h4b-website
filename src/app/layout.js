@@ -2,6 +2,7 @@
 /* eslint-disable camelcase */
 import "./globals.css";
 import { Shrikhand, Odor_Mean_Chey, Inika } from "next/font/google";
+import NavBar from "@/components/Navigation";
 
 const shrikhand = Shrikhand({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inika.className} ${shrikhand.variable} ${omc.variable} `}
       >
+        <NavBar />
         {children}
       </body>
     </html>
