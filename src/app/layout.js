@@ -1,7 +1,7 @@
 /* eslint-disable new-cap */
 /* eslint-disable camelcase */
 import "./globals.css";
-import { Shrikhand, Odor_Mean_Chey, Inika } from "next/font/google";
+import { Shrikhand, Odor_Mean_Chey, Inika, Gurajada } from "next/font/google";
 import NavBar from "@/components/Navigation";
 
 const shrikhand = Shrikhand({
@@ -19,6 +19,11 @@ const inika = Inika({
   weight: ["400", "700"],
   variable: "--font-inika",
 });
+const gurajada = Gurajada({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-gurajada",
+});
 
 export const metadata = {
   title: "Hungry 4 Biscuits @ UCR",
@@ -29,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inika.className} ${shrikhand.variable} ${omc.variable} `}
+        className={`${inika.className} ${shrikhand.variable} ${omc.variable} ${gurajada.variable}`}
       >
         <NavBar />
         {children}

@@ -4,33 +4,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import logo from "@/public/H4B-logo.png";
 import { IoMdMenu } from "react-icons/io";
+import { items } from "@/data/navItems.js";
 
-const items = [
-  {
-    link: "about",
-    name: "About",
-  },
-  {
-    link: "board",
-    name: "Board",
-  },
-  {
-    link: "gallery",
-    name: "Gallery",
-  },
-  {
-    link: "support",
-    name: "Support",
-  },
-  {
-    link: "involve",
-    name: "Involve",
-  },
-  {
-    link: "events",
-    name: "Events",
-  },
-];
 const NavBar = () => {
   const [selected, setSelected] = useState("");
   const [nav, setNav] = useState(false);
@@ -40,7 +15,7 @@ const NavBar = () => {
   return (
     <>
       <div className="sticky top-0 ">
-        <div className="bg-biscuits-peach px-8 py-1 w-screen flex  items-center justify-between text-xl md:text-2xl">
+        <div className="bg-biscuits-peach px-8 py-1 w-screen flex  items-center justify-between">
           <Link
             onClick={() => {
               setSelected("");
@@ -61,7 +36,7 @@ const NavBar = () => {
                 onClick={() => {
                   setSelected(item.name);
                 }}
-                className={`hover:opacity-60 duration-300 border-solid font-semibold ${
+                className={`hover:opacity-60 duration-300 border-solid font-semibold font-gurajada text-4xl ${
                   selected === item.name
                     ? "border-b-2 border-biscuits-purple-200 text-biscuits-purple-200"
                     : "text-biscuits-purple-200"
@@ -92,7 +67,7 @@ const NavBar = () => {
                 setSelected(item.name);
                 handleNav();
               }}
-              className={`hover:opacity-60 duration-300 border-solid font-semibold ${
+              className={`hover:opacity-60 duration-300 border-solid font-semibold font-gurajada text-4xl ${
                 selected === item.name
                   ? "border-b-2 border-biscuits-purple-200 text-biscuits-purple-200"
                   : "text-biscuits-purple-200"
