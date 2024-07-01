@@ -1,15 +1,9 @@
-import Landing from "@/components/home/Landing";
-import Goal from "@/components/home/Goal";
-import Involve from "@/components/home/Involve";
-import Upcoming from "@/components/home/Upcoming";
+import Demo from "@/components/Demo";
 
 const Home = () => {
   return (
-    <div>
-      <Landing />
-      <Goal />
-      <Involve />
-      <Upcoming />
+    <div className="flex flex-col h-screen justify-center items-center font-shrikhand bg-biscuits-red-100 text-5xl">
+      <Demo text="Hello World" color="text-white" />
     </div>
   );
 };
