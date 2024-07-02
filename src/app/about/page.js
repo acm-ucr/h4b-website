@@ -1,7 +1,5 @@
-import Title from "@/components/Title";
-
 const Page = () => {
-  return <Title text="About Us" />;
+  return <>About</>;
 };
 
 export default Page;
