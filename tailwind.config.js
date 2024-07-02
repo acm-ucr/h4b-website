@@ -12,6 +12,7 @@ module.exports = {
         inika: ["var(--font-inika)"],
         shrikhand: ["var(--font-shrikhand)"],
         omc: ["var(--font-omc)"],
+        gurajada: ["var(--font-gurajada)"],
       },
       colors: {
         biscuits: {
