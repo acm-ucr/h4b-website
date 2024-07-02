@@ -2,15 +2,17 @@ import Landing from "@/components/home/Landing";
 import Goal from "@/components/home/Goal";
 import Involve from "@/components/home/Involve";
 import Upcoming from "@/components/home/Upcoming";
+import Button from "@/components/Button";
 
 const Home = () => {
   return (
-    <div>
+    <header>
       <Landing />
       <Goal />
       <Involve />
       <Upcoming />
-    </div>
+      <Button color="blue" text="Sign Up" />
+    </header>
   );
 };
 
