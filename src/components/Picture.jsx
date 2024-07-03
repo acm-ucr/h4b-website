@@ -1,5 +1,4 @@
-import Image from "/public/example.webp";
-import React from "react";
+import Image from "next/image";
 
 const Picture = ({ x, y, image }) => {
   return (
