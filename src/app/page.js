@@ -11,7 +11,7 @@ const Home = () => {
       <Goal />
       <Involve />
       <Upcoming />
-      <Button color="blue" text="Sign Up" />
+      <Button href="https://example.com/signup" color="pink" text="Sign Up" />
     </header>
   );
 };
