@@ -3,6 +3,7 @@
 import "./globals.css";
 import { Shrikhand, Odor_Mean_Chey, Inika, Gurajada } from "next/font/google";
 import NavBar from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const shrikhand = Shrikhand({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
       >
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
