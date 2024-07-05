@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex w-screen p-2 mt-[10%] bg-biscuits-peach justify-between text-biscuits-purple-200 font-omc text-xl">
+    <div className="flex w-screen px-8 p-2 mt-[10%] bg-biscuits-peach justify-between text-biscuits-purple-200 font-omc text-xl">
       <div> H4B at UCR </div>
       <div className="flex flex-row space-x-2 ">
         <Link href="mailto: ">
