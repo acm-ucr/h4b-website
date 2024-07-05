@@ -4,7 +4,7 @@ const Title = ({ text }) => {
       <div className="absolute font-omc text-biscuits-gray-200 text-8xl mb-4">
         {text}
       </div>
-      <div className="relative font-omc text-biscuits-gray-100 text-8xl mb-4 drop-shadow left-1 bottom-0.5">
+      <div className="relative font-omc text-biscuits-gray-100 text-8xl mb-2 drop-shadow left-1 bottom-0.5">
         {text}
       </div>
     </div>
