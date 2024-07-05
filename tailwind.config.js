@@ -30,6 +30,8 @@ module.exports = {
           "brown-100": "#BE9C6A",
           "brown-200": "#7B3F00",
           yellow: "#FFF0CA",
+          pinkish: "#F5CCC5",
+          textColor: "#A36361",
         },
       },
     },
