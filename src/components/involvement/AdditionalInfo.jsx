@@ -11,21 +11,17 @@ const AdditionalInfo = () => {
         Since a H4B board member will accompany you, we kindly ask for no more
         than one person per time slot.
       </div>
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSduexmqB7bXaydEKOG5h7GjIwLGRVT0FdIqyYBE4WzyNO2k2g/viewform"
-        target="_blank"
-      >
-        <Button text="SIGN UP" />
-      </a>
+      <Button
+        text="SIGN UP"
+        link="https://docs.google.com/forms/d/e/1FAIpQLSduexmqB7bXaydEKOG5h7GjIwLGRVT0FdIqyYBE4WzyNO2k2g/viewform"
+      />
       <div className="text-2xl flex justify-center font-inika font-normal leading-10 mb-12">
         Here are some talking points while tabling
       </div>
-      <a
-        href="https://docs.google.com/document/d/1tp1QWfc2W1Jh8vkc32TeL17PM5dYtjgMGbx7VrPZpkY/edit?usp=sharing"
-        target="_blank"
-      >
-        <Button text="DOCS" />
-      </a>
+      <Button
+        text="DOCS"
+        link="https://docs.google.com/document/d/1tp1QWfc2W1Jh8vkc32TeL17PM5dYtjgMGbx7VrPZpkY/edit?usp=sharing"
+      />
     </div>
   );
 };
