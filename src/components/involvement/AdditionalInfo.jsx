@@ -1,5 +1,5 @@
 import React from "react";
-
+import Button from "../Button";
 const AdditionalInfo = () => {
   const name = "Info";
   return (
@@ -15,9 +15,7 @@ const AdditionalInfo = () => {
         href="https://docs.google.com/forms/d/e/1FAIpQLSduexmqB7bXaydEKOG5h7GjIwLGRVT0FdIqyYBE4WzyNO2k2g/viewform"
         target="_blank"
       >
-        <button className="bg-biscuits-pink text-biscuits-brown-200 font-inika font-bold text-4xl py-2 px-20 rounded-full mb-24">
-          SIGN UP
-        </button>
+        <Button text="SIGN UP" />
       </a>
       <div className="text-2xl flex justify-center font-inika font-normal leading-10 mb-12">
         Here are some talking points while tabling
@@ -26,9 +24,7 @@ const AdditionalInfo = () => {
         href="https://docs.google.com/document/d/1tp1QWfc2W1Jh8vkc32TeL17PM5dYtjgMGbx7VrPZpkY/edit?usp=sharing"
         target="_blank"
       >
-        <button className="bg-biscuits-pink text-biscuits-brown-200 font-inika font-bold text-4xl py-2 px-24 rounded-full mb-24">
-          DOCS
-        </button>
+        <Button text="DOCS" />
       </a>
     </div>
   );
