@@ -3,8 +3,8 @@ import Title from "../Title";
 const Involve = () => {
   return (
     <div className="flex flex-col justify-center text-center">
-      <Title />
-      <div className="flex font-omc font-light justify-center text-center text-2xl">
+      <Title text="Get Involved" />
+      <div className="flex font-omc font-light justify-center text-center text-4xl">
         Our food & information tabling occurs every <br />
         Wednesday from 9 AM to 3 PM around the Bell Tower <br />
         All that is needed to participate is fill the <br />
