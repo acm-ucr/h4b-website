@@ -7,7 +7,7 @@ const Page = () => {
     <div>
       <div>
         <Title text="Get To Know Us" />
-        <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-y-16 gap-x-20 mx-16">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-y-16 gap-x-20 mx-16 my-16">
           {BOARD.map((boardMember, index) => (
             <Board
               key={index}
