@@ -1,15 +1,19 @@
-import Landing from "@/components/home/Landing";
-import Goal from "@/components/home/Goal";
-import Involve from "@/components/home/Involve";
-import Upcoming from "@/components/home/Upcoming";
+import Demo from "@/components/Demo";
+import { STUDENTS } from "@/data/Student";
 
 const Home = () => {
   return (
-    <div>
-      <Landing />
-      <Goal />
-      <Involve />
-      <Upcoming />
+    <div className="bg-biscuits-red-100 w-screen h-fit">
+      <div className=" grid grid-cols-3 w-3/4">
+        {STUDENTS.map((student, index) => (
+          <Demo
+            key={index}
+            name={student.name}
+            major={student.major}
+            pic={student.img}
+          />
+        ))}
+      </div>
     </div>
   );
 };
