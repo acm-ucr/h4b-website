@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import logo from "@/public/H4B-logo.webp";
 import { IoMdMenu } from "react-icons/io";
-import { items } from "@/data/navItems.js";
+import { ITEMS } from "@/data/navItems.js";
 
 const NavBar = () => {
   const [selected, setSelected] = useState("");
@@ -15,7 +15,7 @@ const NavBar = () => {
   return (
     <>
       <div className="sticky top-0 z-10">
-        <div className="bg-biscuits-peach px-8 py-1 w-screen flex  items-center justify-between">
+        <div className="bg-biscuits-peach px-8 py-1 flex items-center justify-between">
           <Link
             onClick={() => {
               setSelected("");
@@ -29,7 +29,7 @@ const NavBar = () => {
             />
           </Link>
           <div className="hidden md:flex space-x-4">
-            {items.map((item, index) => (
+            {ITEMS.map((item, index) => (
               <Link
                 href={item.link}
                 key={index}
@@ -59,7 +59,7 @@ const NavBar = () => {
               : "hidden"
           }
         >
-          {items.map((item, index) => (
+          {ITEMS.map((item, index) => (
             <Link
               href={item.link}
               key={index}
