@@ -4,7 +4,11 @@ import { FaDiscord } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 
 export const SOCIALS = [
-  { name: "Mail", icon: <IoMdMail />, link: "mailto:ucr.hungry4biscuits@gmail.com" },
+  {
+    name: "Mail",
+    icon: <IoMdMail />,
+    link: "mailto:ucr.hungry4biscuits@gmail.com",
+  },
   {
     name: "TikTok",
     icon: <PiTiktokLogo />,
