@@ -1,6 +1,6 @@
 import chipCookie from "@/images/chip.webp";
 import heartCookie from "@/images/heart.webp";
-import swirlCookie from "@images/heart.webp";
+import swirlCookie from "@/images/swirl.webp";
 
 export const COOKIES = {
   chip: chipCookie,
@@ -10,12 +10,12 @@ export const COOKIES = {
 
 export const COLORS = {
   red: {
-    light: "#DC8686",
-    dark: "#8C4E4E",
+    light: "text-red-100",
+    dark: "text-red-200",
   },
 
   blue: {
-    light: "#9BB0C1",
-    dark: "2C4755",
+    light: "text-blue-100",
+    dark: "text-blue-200",
   },
 };

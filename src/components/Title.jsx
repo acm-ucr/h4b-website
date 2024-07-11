@@ -1,4 +1,5 @@
 import { COOKIES, COLORS } from "@/data/Title";
+import Image from "next/image";
 
 const Title = ({ text, food, color }) => {
   let lightColor = "biscuits-gray-100";
@@ -11,20 +12,23 @@ const Title = ({ text, food, color }) => {
 
   return (
     <div className="inset-0 flex justify-center items-top p-3">
-      <div
-        className="absolute font-omc text-8xl mb-4"
-        style={{ color: lightColor }}
-      >
+      <div className={`absolute font-omc text-8xl mb-4 ${darkColor}`}>
         {text}
       </div>
       <div
-        className="relative font-omc text-8xl mb-2 drop-shadow left-1 bottom-0.5"
-        style={{ color: darkColor }}
+        className={`relative font-omc text-8xl mb-2 drop-shadow left-1 bottom-0.5 ${lightColor}`}
       >
         {text}
       </div>
       {food && COOKIES[food] && (
-        <img src={COOKIES[food]} alt={`${food} cookies`} className="ml-4" />
+        <div className="ml-4">
+          <Image
+            src={COOKIES[food]}
+            alt={`${food} cookies`}
+            width={100}
+            height={100}
+          />
+        </div>
       )}
     </div>
   );
