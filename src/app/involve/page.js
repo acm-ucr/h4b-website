@@ -4,7 +4,7 @@ import AdditionalInfo from "@/components/involvement/AdditionalInfo";
 
 const Page = () => {
   return (
-    <div>
+    <div className="flex flex-col bg-biscuits-peach bg-blobs1 md:bg-cover bg-contain bg-repeat-y">
       <Tabling />
       <FAQs />
       <AdditionalInfo />
