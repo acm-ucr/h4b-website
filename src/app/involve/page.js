@@ -4,7 +4,7 @@ import AdditionalInfo from "@/components/involvement/AdditionalInfo";
 
 const Page = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <Tabling />
       <FAQs />
       <AdditionalInfo />
