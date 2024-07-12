@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Fall231 from "@/public/images/fall/fall23_1.jpg";
+import Fall231 from "@/public/images/fall/fall23_1.webp";
 
 const Page = () => {
   return (
