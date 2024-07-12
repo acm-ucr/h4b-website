@@ -4,6 +4,7 @@ import Title from "@/components/Title";
 
 const Page = () => {
   return (
+  <div className="flex flex-col bg-biscuits-green-100 bg-blobs1 md:bg-cover bg-contain bg-repeat-y">
     <div className="flex justify-center items-center p-3">
       <div className="grid grid-cols-1">
         <Title text="Get To Know Us" />
@@ -19,6 +20,7 @@ const Page = () => {
             />
           ))}
         </div>
+      </div>
       </div>
     </div>
   );

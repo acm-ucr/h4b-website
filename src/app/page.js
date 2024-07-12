@@ -5,7 +5,7 @@ import Upcoming from "@/components/home/Upcoming";
 
 const Home = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-y-64 bg-biscuits-peach bg-blobs1 md:bg-cover bg-contain bg-repeat-y">
       <Landing />
       <Goal />
       <Involve />

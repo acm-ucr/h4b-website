@@ -34,6 +34,9 @@ module.exports = {
           textColor: "#A36361",
         },
       },
+      backgroundImage: {
+        blobs1: "url('/assets/blobs1.svg')",
+      },
     },
   },
   plugins: [],
