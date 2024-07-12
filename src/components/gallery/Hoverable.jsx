@@ -15,6 +15,11 @@ const Hoverable = ({ text, link, image }) => {
             alt="gallery image"
             className=" aspect-[3/2] object-cover"
           ></Image>
+          <Image
+            src={image}
+            alt="gallery image"
+            className=" aspect-[3/2] object-cover"
+          />
         </div>
       </Link>
     </div>
