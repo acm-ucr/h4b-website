@@ -20,4 +20,9 @@ export const COLORS = {
     light: "text-biscuits-purple-100",
     dark: "text-biscuits-purple-200",
   },
+
+  green: {
+    light: "text-biscuits-green-300",
+    dark: "text-biscuits-green-200",
+  },
 };
