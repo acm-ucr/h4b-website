@@ -9,9 +9,7 @@ const Page = ({ params }) => {
     past: "Past",
   };
   if (!PAGES[params.type]) {
-    return (
-        notFound()
-    );
+    return notFound();
   }
 
   return (
