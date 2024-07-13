@@ -1,4 +1,4 @@
-import Notfound from "@/app/not-found";
+import { notFound } from "next/navigation";
 import Title from "@/components/Title";
 
 const Page = ({ params }) => {
@@ -10,16 +10,13 @@ const Page = ({ params }) => {
   };
   if (!PAGES[params.type]) {
     return (
-      <div className="text-7xl">
-        {" "}
-        <Notfound />{" "}
-      </div>
+        notFound()
     );
   }
 
   return (
     <div className="text-7xl">
-      {<Title text={PAGES[params.type]} food={"chip"} />}
+      <Title text={PAGES[params.type]} food={"chip"} />
     </div>
   );
 };
