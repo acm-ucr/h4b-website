@@ -13,16 +13,16 @@ export const COOKIES = {
 export const COLORS = {
   red: {
     light: "text-biscuits-red-100",
-    dark: "text-biscuits-red-200",
+    dark: "shadow-biscuits-red-200",
   },
 
   purple: {
     light: "text-biscuits-purple-100",
-    dark: "text-biscuits-purple-200",
+    dark: "shadow-biscuits-purple-200",
   },
 
   green: {
     light: "text-biscuits-green-300",
-    dark: "text-biscuits-green-200",
+    dark: "shadow-biscuits-green-200",
   },
 };
