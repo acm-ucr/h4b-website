@@ -14,7 +14,7 @@ const Support = () => {
       </div>
       <div className="text-center text-biscuits-brown-200 font-shrikhand text-5xl">
         Connect with us!
-        <div className="flex justify-evenly translate-y-5">
+        <div className="flex justify-evenly translate-y-5 pb-10">
           {SOCIALS.map((socials, index) => (
             <Connect
               key={index}
