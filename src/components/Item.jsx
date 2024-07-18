@@ -2,19 +2,23 @@
 import { useState } from "react";
 
 const Item = ({ question, answer }) => {
-  const [clicked, setClicked] = useState("");
-  const onClick = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const toggleAnswer = () => {
     setClicked(!clicked);
   };
+
   return (
-    <div className="bg-biscuits-orange w-full pl-2 pt-2 pb-2 rounded font-inika">
+    <div className="bg-biscuits-orange w-full p-4 rounded font-inika">
       <div
-        className="text-biscuits-brown-200 font-bold cursor-pointer text-xl md:text-3xl"
-        onClick={onClick}
+        className={`text-biscuits-brown-200 font-bold cursor-pointer text-xl md:text-3xl ${
+          clicked ? "text-black" : ""
+        }`}
+        onClick={toggleAnswer}
       >
         {question}
       </div>
-      <div className={`${clicked ? "" : "hidden"} text-black pl-3 md:text-xl`}>
+      <div className={`mt-2 ${clicked ? "" : "hidden"} text-black md:text-xl`}>
         {answer}
       </div>
     </div>
