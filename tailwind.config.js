@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -17,7 +19,9 @@ module.exports = {
       colors: {
         biscuits: {
           peach: "#FFEBE0",
+          "peach-200": "#FBECD9",
           orange: "#FFC679",
+          "orange-200": "#E8B298",
           "gray-100": "#9BB0C1",
           "gray-200": "#2C4755",
           "red-100": "#DC8686",
@@ -26,6 +30,7 @@ module.exports = {
           "purple-200": "#58437C",
           "green-100": "#E5FCC8",
           "green-200": "#234C32",
+          "green-300": "#96BA80",
           pink: "#FFDDE7",
           "brown-100": "#BE9C6A",
           "brown-200": "#7B3F00",
@@ -34,7 +39,26 @@ module.exports = {
           textColor: "#A36361",
         },
       },
+      backgroundImage: {
+        blobs1: "url('/assets/blobs1.svg')",
+      },
+      textShadow: {
+        sm: "0 1px 2px var(--tw-shadow-color)",
+        DEFAULT: "-4px 4px 0px var(--tw-shadow-color)",
+        lg: "0 8px 16px var(--tw-shadow-color)",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-shadow": (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") }
+      );
+    }),
+  ],
 };

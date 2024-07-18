@@ -3,7 +3,7 @@ import Button from "../Button";
 const AdditionalInfo = () => {
   const name = "Info";
   return (
-    <div className="bg-biscuits-peach p-8 text-center flex flex-col items-center gap-y-10">
+    <div className="p-8 text-center flex flex-col items-center gap-y-10">
       <div className="text-6xl font-normal text-biscuits-brown-200 font-shrikhand">
         Additional {name}
       </div>
