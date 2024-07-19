@@ -8,19 +8,19 @@ export const ITEMS = [
     name: "Board",
   },
   {
-    link: "gallery",
-    name: "Gallery",
-  },
-  {
-    link: "support",
-    name: "Support",
-  },
-  {
     link: "involve",
     name: "Involve",
   },
   {
+    link: "gallery",
+    name: "Gallery",
+  },
+  {
     link: "events",
     name: "Events",
+  },
+  {
+    link: "support",
+    name: "Support",
   },
 ];
