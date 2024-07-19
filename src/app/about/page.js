@@ -7,9 +7,13 @@ const Page = () => {
   return (
     <div className="bg-biscuits-green-100 flex flex-col items-center gap-y-10 p-4 md:p-10">
       <Title text="About Us" color="red" />
-      <div className="flex justify-center">
-        <Picture x={10} y={10} image={springPicture} alt="Fall 23" />
-      </div>
+      <Picture
+        classname="flex justify-center"
+        x={10}
+        y={10}
+        image={springPicture}
+        alt="Fall 23"
+      />
       {ABOUT.map((section, index) => (
         <div key={index} className="mb-8 text-center">
           <div className="italic text-biscuits-green-200 font-shrikhand text-4xl mb-4">
