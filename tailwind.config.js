@@ -22,6 +22,7 @@ module.exports = {
           "peach-200": "#FBECD9",
           orange: "#FFC679",
           "orange-200": "#E8B298",
+          "orange-300": "#FCE5C9",
           "gray-100": "#9BB0C1",
           "gray-200": "#2C4755",
           "gray-300": "#9EABA2",

@@ -8,19 +8,21 @@ import Image from "next/image";
 
 const Support = () => {
   return (
-    <div className="px-10">
+    <div className="px-10 bg-biscuits-orange-300">
       <Title text="Support Us" food="croissant" color="gray" />
-      <div className="grid grid-cols-2 items-center justify-center py-14">
-        <Image src={standing} alt="standing" />
-        <div className="flex flex-col items-center gap-y-8">
-          <Subtitle color="text-biscuits-brown-200" text="Donations" />
-          <Button text="VENMO" link="https://account.venmo.com/u/h4b_ucr" />
-          <Subtitle color="text-biscuits-brown-200" text="Newsletter" />
-          <Button text="SIGN UP" link="http://eepurl.com/iaWAc5" />
+      <div className="">
+        <div className="flex justify-items-end gap-x-6 py-14 justify-evenly items-center">
+          <Image src={standing} alt="standing" className="justify-items-end" />
+          <div className="flex flex-col items-center gap-y-8">
+            <Subtitle color="text-biscuits-brown-200" text="Donations" />
+            <Button text="VENMO" link="https://account.venmo.com/u/h4b_ucr" />
+            <Subtitle color="text-biscuits-brown-200" text="Newsletter" />
+            <Button text="SIGN UP" link="http://eepurl.com/iaWAc5" />
+          </div>
         </div>
       </div>
-      <div className="text-center text-biscuits-brown-200 font-shrikhand text-5xl">
-        Connect with us!
+      <div className="font-shrikhand">
+        <Subtitle color="text-biscuits-brown-200" text="Connect with us!" />
         <div className="flex justify-evenly translate-y-5 pb-10">
           {SOCIALS.map((socials, index) => (
             <Connect
