@@ -1,4 +1,4 @@
-import springPicture from "@/public/images/spring/spring24_9.webp"; // thisp picture was laready here when i opened file idk if this is what im supposed to put
+import springPicture from "@/public/images/spring/spring24_9.webp"; 
 import { ABOUT } from "@/data/aboutPage";
 import Title from "@/components/Title";
 import Picture from "@/components/Picture";
@@ -12,7 +12,7 @@ const Page = () => {
         x={10}
         y={10}
         image={springPicture}
-        alt="Fall 23"
+        alt="Spring 24 Picture"
       />
       {ABOUT.map((section, index) => (
         <div key={index} className="mb-8 text-center">
