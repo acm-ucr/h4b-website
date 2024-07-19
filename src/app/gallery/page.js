@@ -13,7 +13,7 @@ const Page = () => {
   return (
     <div className="bg-green-100 min-h-screen p-7 w-full flex flex-col items-center">
       <div className="flex justify-center mb-10">
-        <Title text="Gallery" food="chip" color="biscuits-grey-100" />
+        <Title text="Gallery" food="chip" />
       </div>
 
       <div className="mb-14">
