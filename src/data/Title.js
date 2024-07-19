@@ -25,4 +25,9 @@ export const COLORS = {
     light: "text-biscuits-green-300",
     dark: "shadow-biscuits-green-200",
   },
+
+  gray: {
+    light: "text-biscuits-gray-300",
+    dark: "shadow-biscuits-gray-400",
+  },
 };
