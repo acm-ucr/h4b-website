@@ -17,7 +17,7 @@ const Page = () => {
       </div>
 
       <div className="mb-14">
-        <div className="mb-10">
+        <div className="mb-10 flex justify-center">
           <Subtitle text="Food Tabling" color="biscuits-green-200" />
         </div>
 
@@ -29,7 +29,7 @@ const Page = () => {
       </div>
 
       <div className="mb-20">
-        <div className="mb-10">
+        <div className="mb-10 flex justify-center">
           <Subtitle text="Quarterly Events" color="biscuits-green-200" />
         </div>
 
@@ -46,7 +46,7 @@ const Page = () => {
       </div>
 
       <div className="mb-14">
-        <div className="mb-10">
+        <div className="mb-10 flex justify-center">
           <Subtitle text="Past Events" color="green-200" />
         </div>
         <div className="text-textColor">
