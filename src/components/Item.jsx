@@ -11,8 +11,7 @@ const Item = ({ question, answer }) => {
   return (
     <div className="bg-biscuits-orange w-full p-4 rounded font-inika">
       <div
-        className={`text-biscuits-brown-200 font-bold cursor-pointer text-xl md:text-3xl ${
-          clicked ? "text-black" : ""
+        className={`text-biscuits-brown-200 font-bold cursor-pointer text-xl md:text-3xl
         }`}
         onClick={toggleAnswer}
       >
