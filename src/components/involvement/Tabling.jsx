@@ -10,13 +10,13 @@ const Tabling = () => {
       <Subtitle color="text-biscuits-brown-200" text="How to Table" />
 
       <Picture x={20} y={20} image={tabling1} className="px-4 my-4" />
-
-      {TABLING.map((tabling, index) => (
-        <div key={index} className="flex flex-row font-inika text-2xl">
-          <p className="font-bold">{tabling.number} </p>
-          <p>{tabling.bullet}</p>
-        </div>
-      ))}
+      <ul className="font-inika text-2xl list-decimal">
+        {TABLING.map((tabling, index) => (
+          <li key={index} className="my-8">
+            {tabling}
+          </li>
+        ))}
+      </ul>
 
       <Picture x={20} y={20} image={tabling4} className="px-4 my-4" />
     </div>
