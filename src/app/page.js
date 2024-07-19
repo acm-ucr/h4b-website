@@ -3,7 +3,7 @@ import { STUDENTS } from "@/data/Student";
 
 const Home = () => {
   return (
-    <div className="bg-biscuits-red-100 w-screen h-fit">
+    <div className="bg-biscuits-green-100 md:bg-biscuits-red-100 w-screen h-fit">
       <div className=" grid grid-cols-3 w-3/4">
         {STUDENTS.map((student, index) => (
           <Demo
