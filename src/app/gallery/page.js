@@ -18,7 +18,7 @@ const Page = () => {
 
       <div className="mb-14">
         <div className="mb-10 flex justify-center">
-          <Subtitle text="Food Tabling" color="biscuits-green-200" />
+          <Subtitle text="Food Tabling" color="text-biscuits-green-200" />
         </div>
 
         <div className="grid grid-cols-3 gap-8 place-items-center">
@@ -30,7 +30,7 @@ const Page = () => {
 
       <div className="mb-20">
         <div className="mb-10 flex justify-center">
-          <Subtitle text="Quarterly Events" color="biscuits-green-200" />
+          <Subtitle text="Quarterly Events" color="text-biscuits-green-200" />
         </div>
 
         <div className="grid grid-cols-3 gap-8 place-items-center text-black">
@@ -47,10 +47,10 @@ const Page = () => {
 
       <div className="mb-14">
         <div className="mb-10 flex justify-center">
-          <Subtitle text="Past Events" color="green-200" />
+          <Subtitle text="Past Events" color="text-biscuits-green-200" />
         </div>
         <div className="text-textColor">
-          <Hoverable link="/PastEvents" image={PastEvent} text="Past Events" />
+          <Hoverable link="/past" image={PastEvent} text="Past Events" />
         </div>
       </div>
     </div>
