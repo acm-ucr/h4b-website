@@ -8,16 +8,16 @@ const UpcomingCard = ({
 }) => {
   return (
     <div>
-      <div className="grid grid-cols-3 border-2 border-biscuits-purple-200 rounded-3xl">
-        <div className="grid bg-biscuits-purple-100 items-center justify-center rounded-l-3xl text-white py-3">
-          <p className="text-3xl text-center font-omc">{month}</p>
-          <p className="text-5xl text-center font-omc">{date}</p>
-          <p className="text-lg text-center font-omc">{time}</p>
+      <div className="flex flex-row rounded-3xl">
+        <div className="bg-biscuits-purple-100 items-center rounded-l-3xl justify-center text-white text-shadow shadow-biscuits-purple-200 py-3 w-1/3">
+          <div className="text-5xl text-center font-omc">{month}</div>
+          <div className="text-7xl text-center font-omc">{date}</div>
+          <div className="text-4xl text-center font-omc">{time}</div>
         </div>
-        <div className="bg-white rounded-r-3xl col-span-2 p-3">
-          <p className="text-2xl font-omc">{event}</p>
-          <p className="text-m font-omc">{location}</p>
-          <p className="text-sm ">{description}</p>
+        <div className="flex flex-col bg-white w-3/4 rounded-r-3xl text-left pl-5 justify-center">
+          <div className="text-5xl font-omc">{event}</div>
+          <div className="text-m font-omc">{location}</div>
+          <div className="text-sm ">{description}</div>
         </div>
       </div>
     </div>
