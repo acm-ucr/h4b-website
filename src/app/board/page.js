@@ -8,7 +8,7 @@ const Page = () => {
       <div className="flex justify-center items-center p-3">
         <div className="grid grid-cols-1 gap-y-10">
           <Title text="Get To Know Us" color="green" />
-          <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-y-16 gap-x-32 justify-items-center">
+          <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-y-16 gap-x-32">
             {BOARD.map((boardMember, index) => (
               <Board
                 key={index}
