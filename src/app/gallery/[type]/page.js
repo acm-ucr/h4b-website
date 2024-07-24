@@ -15,7 +15,10 @@ const Page = ({ params }) => {
     spring: "Spring 2024",
     past: "Past",
   };
-  if (PAGES.hasOwnProperty(params.type)) {
+  if (
+    PAGES.hasOwnProperty(params.type) &&
+    PICTURES.hasOwnProperty(params.type)
+  ) {
     return (
       <div className="flex flex-col text-7xl items-center pt-10">
         <Title text={PAGES[params.type]} food={"chip"} />

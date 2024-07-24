@@ -50,7 +50,11 @@ const Page = () => {
           <Subtitle text="Past Events" color="text-biscuits-green-200" />
         </div>
         <div className="text-textColor">
-          <Hoverable link="/past" image={PastEvent} text="Past Events" />
+          <Hoverable
+            link="/gallery/past"
+            image={PastEvent}
+            text="Past Events"
+          />
         </div>
       </div>
     </div>

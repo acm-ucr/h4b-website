@@ -38,6 +38,20 @@ import spring246 from "@/public/images/spring/spring24_6.webp";
 import spring247 from "@/public/images/spring/spring24_7.webp";
 import spring248 from "@/public/images/spring/spring24_8.webp";
 import spring249 from "@/public/images/spring/spring24_9.webp";
+import past1 from "@/public/images/past/past_1.webp";
+import past2 from "@/public/images/past/past_2.webp";
+import past3 from "@/public/images/past/past_3.webp";
+import past4 from "@/public/images/past/past_4.webp";
+import past5 from "@/public/images/past/past_5.webp";
+import past6 from "@/public/images/past/past_6.webp";
+import past7 from "@/public/images/past/past_7.webp";
+import past8 from "@/public/images/past/past_8.webp";
+import past9 from "@/public/images/past/past_9.webp";
+import past10 from "@/public/images/past/past_10.webp";
+import past11 from "@/public/images/past/past_11.webp";
+import past12 from "@/public/images/past/past_12.webp";
+import past13 from "@/public/images/past/past_13.webp";
+import past14 from "@/public/images/past/past_14.webp";
 
 export const PICTURES = {
   fall: [
@@ -85,5 +99,21 @@ export const PICTURES = {
     spring247,
     spring248,
     spring249,
+  ],
+  past: [
+    past1,
+    past2,
+    past3,
+    past4,
+    past5,
+    past6,
+    past7,
+    past8,
+    past9,
+    past10,
+    past11,
+    past12,
+    past13,
+    past14,
   ],
 };
