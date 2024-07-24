@@ -1,26 +1,26 @@
 export const ITEMS = [
   {
-    link: "about",
+    link: "../about",
     name: "About",
   },
   {
-    link: "board",
+    link: "../board",
     name: "Board",
   },
   {
-    link: "involve",
+    link: "../involve",
     name: "Involve",
   },
   {
-    link: "gallery",
+    link: "../gallery",
     name: "Gallery",
   },
   {
-    link: "events",
+    link: "../events",
     name: "Events",
   },
   {
-    link: "support",
+    link: "../support",
     name: "Support",
   },
 ];
