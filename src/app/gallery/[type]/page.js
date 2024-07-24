@@ -17,9 +17,9 @@ const Page = ({ params }) => {
   };
   if (PAGES.hasOwnProperty(params.type)) {
     return (
-      <div className="text-7xl">
+      <div className="flex flex-col text-7xl items-center pt-10">
         <Title text={PAGES[params.type]} food={"chip"} />
-        <div className="grid-cols-3">
+        <div className="grid grid-cols-3 w-4/5 py-10 gap-2">
           {PICTURES[params.type].map((image, index) => (
             <Image
               src={image}
