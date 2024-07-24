@@ -41,129 +41,49 @@ import spring249 from "@/public/images/spring/spring24_9.webp";
 
 export const PICTURES = {
   fall: [
-    {
-      image: fall231,
-    },
-    {
-      image: fall232,
-    },
-    {
-      image: fall233,
-    },
-    {
-      image: fall234,
-    },
-    {
-      image: fall235,
-    },
-    {
-      image: fall236,
-    },
-    {
-      image: fall238,
-    },
-    {
-      image: fall239,
-    },
-    {
-      image: fall2310,
-    },
-    {
-      image: fall2311,
-    },
-    {
-      image: fall2312,
-    },
-    {
-      image: fall2313,
-    },
-    {
-      image: fall2314,
-    },
-    {
-      image: fall2315,
-    },
-    {
-      image: fall2316,
-    },
-    {
-      image: fall2317,
-    },
-    {
-      image: fall2318,
-    },
-    {
-      image: fall2319,
-    },
-    {
-      image: fall2320,
-    },
-    {
-      image: fall2321,
-    },
-    {
-      image: fall23_22,
-    },
-    {
-      image: fall2323,
-    },
-    {
-      image: fall2324,
-    },
+    fall231,
+    fall232,
+    fall233,
+    fall234,
+    fall235,
+    fall236,
+    fall238,
+    fall239,
+    fall2310,
+    fall2311,
+    fall2312,
+    fall2313,
+    fall2314,
+    fall2315,
+    fall2316,
+    fall2317,
+    fall2318,
+    fall2319,
+    fall2320,
+    fall2321,
+    fall2322,
+    fall2323,
+    fall2324,
   ],
   winter: [
-    {
-      image: winter241,
-    },
-    {
-      image: winter242,
-    },
-    {
-      image: winter243,
-    },
-    {
-      image: winter244,
-    },
-    {
-      image: winter245,
-    },
-    {
-      image: winter246,
-    },
-    {
-      image: winter247,
-    },
-    {
-      image: winter248,
-    },
+    winter241,
+    winter242,
+    winter243,
+    winter244,
+    winter245,
+    winter246,
+    winter247,
+    winter248,
   ],
   spring: [
-    {
-      image: spring241,
-    },
-    {
-      image: spring242,
-    },
-    {
-      image: spring243,
-    },
-    {
-      image: spring244,
-    },
-    {
-      image: spring245,
-    },
-    {
-      image: spring246,
-    },
-    {
-      image: spring247,
-    },
-    {
-      image: spring248,
-    },
-    {
-      image: spring249,
-    },
+    spring241,
+    spring242,
+    spring243,
+    spring244,
+    spring245,
+    spring246,
+    spring247,
+    spring248,
+    spring249,
   ],
 };

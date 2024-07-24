@@ -1,6 +1,6 @@
 import NotFound from "@/app/not-found";
 import Title from "@/components/Title";
-import Picture from "@/components/Picture.jsx";
+import Image from "next/image";
 import { PICTURES } from "@/data/gallery/pictures.js";
 
 export async function generateStaticParams() {
@@ -10,9 +10,9 @@ export async function generateStaticParams() {
 
 const Page = ({ params }) => {
   const PAGES = {
-    fall: "Fall",
-    winter: "Winter",
-    spring: "Spring",
+    fall: "Fall 2023",
+    winter: "Winter 2024",
+    spring: "Spring 2024",
     past: "Past",
   };
   if (PAGES.hasOwnProperty(params.type)) {
@@ -21,9 +21,11 @@ const Page = ({ params }) => {
         <Title text={PAGES[params.type]} food={"chip"} />
         <div className="grid-cols-3">
           {PICTURES[params.type].map((image, index) => (
-            <div key={index} className="">
-              <Picture x={1} y={1} src={image} alt={"img"} />
-            </div>
+            <Image
+              src={image}
+              alt={`${PAGES[params.type]}_${index}`}
+              key={index}
+            />
           ))}
         </div>
       </div>
