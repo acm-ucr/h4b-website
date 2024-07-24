@@ -14,7 +14,7 @@ const Title = ({ text, food, color }) => {
     <div className="flex flex-row justify-center">
       <div className="inset-0 flex justify-center items-top p-3">
         <div
-          className={`text-shadow ${darkColor} font-omc text-8xl mb-2 drop-shadow left-1 bottom-0.5 ${lightColor}`}
+          className={`text-shadow ${darkColor} font-omc text-5xl md:text-8xl mb-2 drop-shadow left-1 bottom-0.5 ${lightColor} text-center`}
         >
           {text}
         </div>
