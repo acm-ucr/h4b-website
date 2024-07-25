@@ -10,27 +10,30 @@ const Support = () => {
   return (
     <div className="px-10 bg-biscuits-orange-300">
       <Title text="Support Us" food="croissant" color="gray" />
-      <div className="">
-        <div className="flex justify-items-end gap-x-6 py-14 justify-evenly items-center">
-          <Image src={standing} alt="standing" className="justify-items-end" />
-          <div className="flex flex-col items-center gap-y-8">
-            <Subtitle color="text-biscuits-brown-200" text="Donations" />
-            <Button text="VENMO" link="https://account.venmo.com/u/h4b_ucr" />
-            <Subtitle color="text-biscuits-brown-200" text="Newsletter" />
-            <Button text="SIGN UP" link="http://eepurl.com/iaWAc5" />
-          </div>
+      <div className="flex flex-wrap gap-x-6 py-14 justify-evenly items-center">
+        <Image src={standing} alt="standing" className="pb-4" />
+        <div className="flex flex-col items-center gap-y-8 pt-12 md:pt-0">
+          <Subtitle color="text-biscuits-brown-200" text="Donations" />
+          <Button text="VENMO" link="https://account.venmo.com/u/h4b_ucr" />
+          <Subtitle color="text-biscuits-brown-200" text="Newsletter" />
+          <Button text="SIGN UP" link="http://eepurl.com/iaWAc5" />
         </div>
       </div>
       <div className="font-shrikhand">
-        <Subtitle color="text-biscuits-brown-200" text="Connect with us!" />
-        <div className="flex justify-evenly translate-y-5 pb-10">
+        <Subtitle
+          color="text-center text-biscuits-brown-200"
+          text="Connect with us!"
+        />
+        <div className="mx-12 xl:mx-64 grid grid-cols-2 xl:grid-cols-4 translate-y-5 pb-10">
           {SOCIALS.map((socials, index) => (
-            <Connect
-              key={index}
-              name={socials.name}
-              icon={socials.icon}
-              link={socials.link}
-            />
+            <div key={index} className="w-auto px-5">
+              <Connect
+                key={index}
+                name={socials.name}
+                icon={socials.icon}
+                link={socials.link}
+              />
+            </div>
           ))}
         </div>
       </div>
