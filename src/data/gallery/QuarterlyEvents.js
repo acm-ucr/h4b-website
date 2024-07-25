@@ -5,17 +5,17 @@ import spring from "@/public/images/spring/spring24_9.webp";
 export const quarterlyEvents = [
   {
     title: "Fall",
-    link: "/fall",
+    link: "/gallery/fall",
     photo: fall,
   },
   {
     title: "Winter",
-    link: "/winter",
+    link: "/gallery/winter",
     photo: fallcuzNoWinterpic,
   },
   {
     title: "Spring",
-    link: "/spring",
+    link: "/gallery/spring",
     photo: spring,
   },
 ];
