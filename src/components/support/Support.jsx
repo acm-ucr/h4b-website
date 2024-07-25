@@ -24,9 +24,9 @@ const Support = () => {
           color="text-center text-biscuits-brown-200"
           text="Connect with us!"
         />
-        <div className="flex-wrap flex justify-center md:gap-12 translate-y-5 pb-10">
+        <div className="mx-12 xl:mx-64 grid grid-cols-2 xl:grid-cols-4 translate-y-5 pb-10">
           {SOCIALS.map((socials, index) => (
-            <div key={index} className="w-auto">
+            <div key={index} className="w-auto px-5">
               <Connect
                 key={index}
                 name={socials.name}
