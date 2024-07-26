@@ -14,11 +14,12 @@ const NavBar = () => {
   };
   return (
     <>
-      <div className="sticky top-0 z-10">
+      <div className="sticky top-0 z-10 drop-shadow">
         <div className="bg-biscuits-peach px-8 py-1 flex items-center justify-between">
           <Link
             onClick={() => {
               setSelected("");
+              setNav(false);
             }}
             href="/"
           >
