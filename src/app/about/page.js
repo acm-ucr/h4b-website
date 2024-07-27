@@ -18,7 +18,7 @@ const Page = () => {
       {ABOUT.map((section, index) => (
         <div key={index} className="mb-8 text-center">
           <Subtitle color="text-biscuits-green-200" text={section.subtitle} />
-          <div className="md:text-2xl text-base font-inika w-2/3 mx-auto">
+          <div className="md:text-2xl text-base font-inika md:w-2/3 w-10/12 mx-auto">
             {section.paragraph}
           </div>
         </div>
