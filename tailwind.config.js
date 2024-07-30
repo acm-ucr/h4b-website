@@ -63,6 +63,6 @@ module.exports = {
         { values: theme("textShadow") }
       );
     }),
+    require("tailwindcss-animated"),
   ],
-  plugins: [require("tailwindcss-animated")],
 };
