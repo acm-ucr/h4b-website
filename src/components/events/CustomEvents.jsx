@@ -1,3 +1,9 @@
-const CustomEvents = () => {};
+const CustomEvent = ({ event }) => {
+  return (
+    <div>
+      <p className="text-black">{event.title}</p>
+    </div>
+  );
+};
 
-export default CustomEvents;
+export default CustomEvent;
