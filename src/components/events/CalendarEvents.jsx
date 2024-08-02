@@ -1,14 +1,14 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import { Calendar, momentLocalizer } from "react-big-calendar";
-import { useState } from "react";
 import CustomEvent from "./CustomEvents";
 import CustomHeader from "./CustomHeader";
 import CustomToolbar from "./CustomToolbar";
 
 const mLocalizer = momentLocalizer(moment);
+
 const CalendarEvents = () => {
   const [date, setDate] = useState(new Date());
   const dummyEvents = [
@@ -27,10 +27,12 @@ const CalendarEvents = () => {
       summary: "even better event",
     },
   ];
+
   return (
-    <section className="w-full flex justify-center items-center flex-col">
-      <div className="mb-5 w-11/12 flex justify-center items-center ">
-        <div className="h-[95vh] w-full relative">
+    <div className="relative flex flex-col">
+      {/* Calendar Section */}
+      <section className="w-full flex-grow flex justify-center items-center">
+        <div className="w-full h-[95vh] relative">
           <Calendar
             className="w-full m-0 p-0 2xl:text-3xl text-xl"
             date={date}
@@ -69,8 +71,8 @@ const CalendarEvents = () => {
             }}
           />
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

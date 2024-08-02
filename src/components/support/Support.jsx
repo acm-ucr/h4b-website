@@ -1,10 +1,10 @@
+import Title from "../Title";
+import standing from "@/public/images/standing.webp";
+import Image from "next/image";
 import Connect from "@/components/support/Connect";
 import Subtitle from "@/components/Subtitle";
 import Button from "@/components/Button";
 import { SOCIALS } from "@/data/support/Socials";
-import Title from "../Title";
-import standing from "@/public/images/standing.webp";
-import Image from "next/image";
 
 const Support = () => {
   return (
@@ -24,14 +24,16 @@ const Support = () => {
           color="text-center text-biscuits-brown-200"
           text="Connect with us!"
         />
-        <div className="mx-12 xl:mx-64 grid grid-cols-2 xl:grid-cols-4 translate-y-5 pb-10">
-          {SOCIALS.map((socials, index) => (
-            <div key={index} className="w-auto px-5">
+        <div className="mx-12 xl:mx-64 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-32 gap-y-8 pb-10">
+          {SOCIALS.map((social, index) => (
+            <div
+              key={index}
+              className="w-auto flex items-center justify-center"
+            >
               <Connect
-                key={index}
-                name={socials.name}
-                icon={socials.icon}
-                link={socials.link}
+                name={social.name}
+                icon={social.icon}
+                link={social.link}
               />
             </div>
           ))}
@@ -40,4 +42,5 @@ const Support = () => {
     </div>
   );
 };
+
 export default Support;
