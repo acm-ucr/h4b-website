@@ -27,7 +27,7 @@ const UpcomingCard = ({
           <div className="text-sm sm:text-base md:lg lg:text-m font-omc">
             {location}
           </div>
-          <div className="text-xs lg:text-sm ">{description}</div>
+          <div className="text-xs md:text-sm ">{description}</div>
         </div>
       </div>
     </div>
