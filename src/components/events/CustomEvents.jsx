@@ -1,29 +1,20 @@
 import React from "react";
 
-const categoryColors = {
-  "H4B Food Tabling": "#FFDDE7", // pink
-  "H4B Events": "#FFC679", // orange
-  "Food Resources": "#4A90E2", // Blue
-};
-
 const CustomEvent = ({ event }) => {
-  const getColor = () => {
+  const getColorClass = () => {
     if (event.title.includes("Tabling")) {
-      return categoryColors["H4B Food Tabling"];
+      return "bg-biscuits-pinkTabling";
     }
     if (event.title.includes("Event")) {
-      return categoryColors["H4B Events"];
+      return "bg-biscuits-orangeEvent";
     }
-    return categoryColors["Food Resources"];
+    return "bg-biscuits-blueResources";
   };
 
-  const backgroundColor = getColor();
+  const colorClass = getColorClass();
 
   return (
-    <div
-      className="border rounded-lg p-2 mb-2"
-      style={{ backgroundColor, borderColor: backgroundColor }}
-    >
+    <div className={`rounded-lg p-2 mb-2 ${colorClass}`}>
       <p className="text-black truncate text-center text-sm font-shrikhand">
         {event.title}
       </p>

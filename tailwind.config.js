@@ -40,6 +40,9 @@ module.exports = {
           yellow: "#FFF0CA",
           pinkish: "#F5CCC5",
           textColor: "#A36361",
+          orangeEvent: "#FFC679",
+          blueResources: "#4A90E2",
+          pinkTabling: "#FFDDE7",
         },
       },
       backgroundImage: {
