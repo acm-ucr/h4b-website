@@ -4,7 +4,7 @@ const Connect = ({ name, icon, link }) => {
   return (
     <Link
       href={link}
-      className="flex flex-col items-center text-8xl text-biscuits-purple-200 hover:underline"
+      className="flex flex-col items-center text-8xl text-biscuits-purple-200"
       target="_blank"
       rel="noopener noreferrer"
     >
