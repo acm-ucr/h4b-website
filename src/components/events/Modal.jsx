@@ -9,7 +9,7 @@ const Bullet = ({ item }) => (
 
 const Modal = ({ title, date, time, place, description }) => {
   return (
-    <div className="relative flex-col bg-opacity-55 p-6 rounded-3xl border-8 w-1/4 bg-blue-50 border-biscuits-blue-100">
+    <div className="relative flex-col bg-opacity-55 p-6 rounded-3xl border-8 w-1/4 bg-white border-biscuits-blue-100">
       <button className="absolute top-6 right-6 hover:text-biscuits-blue-100 text-2xl">
         <IoMdClose />
       </button>
