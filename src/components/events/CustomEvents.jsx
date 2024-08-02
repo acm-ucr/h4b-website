@@ -2,7 +2,7 @@ import React from "react";
 
 const categoryColors = {
   "H4B Food Tabling": "#FFDDE7", // pink
-  "H4B Events": "#FFC679 ", // orange
+  "H4B Events": "#FFC679", // orange
   "Food Resources": "#4A90E2", // Blue
 };
 
@@ -21,10 +21,10 @@ const CustomEvent = ({ event }) => {
 
   return (
     <div
-      className="border-2 rounded-2xl p-4 mb-4"
+      className="border rounded-lg p-2 mb-2"
       style={{ backgroundColor, borderColor: backgroundColor }}
     >
-      <p className="text-black truncate text-center font-shrikhand">
+      <p className="text-black truncate text-center text-sm font-shrikhand">
         {event.title}
       </p>
     </div>
