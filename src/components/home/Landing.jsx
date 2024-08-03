@@ -1,6 +1,6 @@
 import Image from "next/image";
 import landing from "@/public/images/landing.webp";
-import mobileLanding from "@/public/images/mobilelanding.png";
+import mobileLanding from "@/public/images/mobilelanding.webp";
 
 const Landing = () => {
   return (
