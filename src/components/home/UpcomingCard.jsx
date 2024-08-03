@@ -9,7 +9,7 @@ const UpcomingCard = ({
   return (
     <div>
       <div className="flex flex-row rounded-3xl">
-        <div className="bg-biscuits-purple-100 items-center rounded-l-3xl justify-center text-white text-shadow shadow-biscuits-purple-200 py-3 w-1/3" >
+        <div className="bg-biscuits-purple-100 items-center rounded-l-3xl justify-center text-white text-shadow shadow-biscuits-purple-200 py-3 w-1/3">
           <div className="text-3xl md:text-5xl text-center font-omc">
             {month}
           </div>
