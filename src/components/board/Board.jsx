@@ -1,5 +1,8 @@
+"use client";
+import useView from "@/components/useView";
 import Image from "next/image";
 const Board = ({ name, role, yearMajor, funFact, picture }) => {
+  const [inView, ref] = useView();
   return (
     <div className="flex-col text-center justify-center w-64 h-100 bg-biscuits-yellow shadow-[20px_-15px_0px_rgb(190,156,106)]">
       <Image
@@ -10,19 +13,39 @@ const Board = ({ name, role, yearMajor, funFact, picture }) => {
         height={100}
       />
 
-      <div className="text-biscuits-green-200 font-shrikhand p-1 -translate-y-1 text-3xl ">
+      <div
+        ref={ref}
+        className={`text-biscuits-green-200 font-shrikhand p-1 -translate-y-1 text-3xl ${
+          inView && "animate-fade-left animate-delay-400"
+        }`}
+      >
         {name}
       </div>
 
-      <div className="text-biscuits-green-200 font-omc p-1 -translate-y-2 text-xl">
+      <div
+        ref={ref}
+        className={`text-biscuits-green-200 font-omc p-1 -translate-y-2 text-xl ${
+          inView && "animate-fade-right animate-delay-400"
+        }`}
+      >
         {role}
       </div>
 
-      <div className="text-biscuits-gray-200 font-inika p-1 -translate-y-3 font-bold text-sm">
+      <div
+        ref={ref}
+        className={`text-biscuits-gray-200 font-inika p-1 -translate-y-3 font-bold text-sm ${
+          inView && "animate-fade-left animate-delay-400"
+        }`}
+      >
         {yearMajor}
       </div>
 
-      <div className="text-biscuits-gray-200 font-inika p-1 -translate-y-3 font-bold text-sm">
+      <div
+        ref={ref}
+        className={`text-biscuits-gray-200 font-inika p-1 -translate-y-3 font-bold text-sm ${
+          inView && "animate-fade-left animate-delay-400"
+        }`}
+      >
         {funFact}
       </div>
     </div>
