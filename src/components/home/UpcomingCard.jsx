@@ -20,10 +20,14 @@ const UpcomingCard = ({
             {time}
           </div>
         </div>
-        <div className="flex flex-col bg-white w-3/4 rounded-r-3xl text-left pl-5 justify-center">
-          <div className="text-3xl md:text-5xl font-omc">{event}</div>
-          <div className="text-sm md:text-m font-omc">{location}</div>
-          <div className="text-xs md:text-sm ">{description}</div>
+        <div className="flex flex-col bg-white w-3/4 rounded-r-3xl text-left justify-center pl-2 md:pl-3 lg:pl-5">
+          <div className="text-2xl pl-1 sm:3xl md:4xl lg:text-5xl font-omc">
+            {event}
+          </div>
+          <div className="text-sm sm:text-base pl-1 md:lg lg:text-m font-omc">
+            {location}
+          </div>
+          <div className="text-xs pl-1 lg:text-sm pr-2">{description}</div>
         </div>
       </div>
     </div>
