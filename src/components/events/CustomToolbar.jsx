@@ -1,4 +1,5 @@
 import { ImArrowLeft, ImArrowRight } from "react-icons/im";
+import Title from "@/components/Title";
 
 const monthNames = [
   "Jan",
@@ -32,8 +33,8 @@ const mapToNum = {
 
 const CustomToolbar = (event) => {
   return (
-    <div className="flex items-center justify-center w-full text-5xl 2xl:text-6xl text-center relative h-60 lg:h-52">
-      <div className="font-bold flex justify-center items-center gap-3 py-12 absolute left-[50%] translate-x-[-50%] -top-7 lg:left-0 lg:translate-x-0 lg:top-0">
+    <div className="flex items-center justify-center w-full text-5xl xl:text-6xl text-center relative h-60 md:h-80 xl:h-52">
+      <div className="font-bold flex justify-center items-center gap-3 py-12 absolute left-[50%] translate-x-[-50%] -top-7 xl:left-0 xl:translate-x-0 xl:top-0">
         <ImArrowLeft
           onClick={() => {
             event.onNavigate("PREV");
@@ -45,7 +46,6 @@ const CustomToolbar = (event) => {
             {mapToNum[monthNames[event.date.getMonth()]]}
           </div>
           <div className="font-shrikhand text-biscuits-purple-100 text-shadow shadow-biscuits-gray-200">
-            {" "}
             {event.date.getFullYear().toString().substr(2, 4)}
           </div>
         </div>
@@ -56,8 +56,8 @@ const CustomToolbar = (event) => {
           className="hover:cursor-pointer hover:opacity-50 duration-300 text-4xl text-biscuits-purple-200"
         />
       </div>
-      <div className="font-shrikhand text-biscuits-purple-100 text-shadow shadow-biscuits-gray-200 pt-28 lg:pt-0">
-        Calendar of Events
+      <div className="absolute top-28 xl:top-[50%] xl:left-[50%] xl:translate-x-[-50%] xl:translate-y-[-50%]">
+        <Title text="Calendar of Events" color="purple" />
       </div>
     </div>
   );
