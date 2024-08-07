@@ -7,7 +7,7 @@ const Goal = () => {
     <div
       className={`${
         inView && "animate-fade-up"
-      } flex flex-col justify-center text-center`}
+      } flex flex-col justify-center text-center mt-[5%]`}
     >
       <Title text="Our Goal" />
       <div
