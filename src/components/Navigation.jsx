@@ -48,7 +48,7 @@ const NavBar = () => {
             ))}
           </div>
           <div className="flex md:hidden" onClick={handleNav}>
-            <IoMdMenu className="text-3xl text-black hover:cursor-pointer hover:text-biscuits-purple-200" />
+            <IoMdMenu className="text-3xl hover:cursor-pointer text-biscuits-purple-200" />
           </div>
         </div>
 
