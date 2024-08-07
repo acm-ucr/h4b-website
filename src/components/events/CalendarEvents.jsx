@@ -51,10 +51,10 @@ const CalendarEvents = () => {
   }, []);
 
   return (
-    <div className="relative flex flex-col">
+    <div className="flex flex-col">
       {/* Calendar Section */}
       <section className="w-full flex-grow flex justify-center items-center">
-        <div className="w-full h-[95vh] relative">
+        <div className="w-11/12 h-[95vh] relative">
           <Calendar
             className="w-full m-0 p-0 2xl:text-3xl text-xl"
             date={date}
@@ -93,7 +93,12 @@ const CalendarEvents = () => {
             }}
           />
           {selectedEvent && (
-            <Modal setEvents={setSelectedEvent} events={selectedEvent} />
+            <Modal
+              setEvents={setSelectedEvent}
+              title={selectedEvent.summary}
+              description={selectedEvent.description}
+              location={selectedEvent.location}
+            />
           )}
           {console.log(selectedEvent)}
         </div>
