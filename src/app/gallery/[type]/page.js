@@ -1,7 +1,7 @@
 import NotFound from "@/app/not-found";
 import Title from "@/components/Title";
 import Image from "next/image";
-import { PICTURES } from "@/data/gallery/pictures.js";
+import { PICTURES } from "@/data/gallery/Pictures.js";
 
 export async function generateStaticParams() {
   const allPages = ["fall", "winter", "spring", "past"];

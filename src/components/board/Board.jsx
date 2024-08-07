@@ -4,7 +4,7 @@ import Image from "next/image";
 const Board = ({ name, role, yearMajor, funFact, picture }) => {
   const [inView, ref] = useView();
   return (
-    <div className="flex-col text-center justify-center w-64 h-100 bg-biscuits-yellow shadow-[20px_-15px_0px_rgb(190,156,106)]">
+    <div className="flex-col text-center justify-center w-64 h-96 bg-biscuits-yellow shadow-[20px_-15px_0px_rgb(190,156,106)]">
       <Image
         src={picture}
         alt="picture"
@@ -15,7 +15,7 @@ const Board = ({ name, role, yearMajor, funFact, picture }) => {
 
       <div
         ref={ref}
-        className={`text-biscuits-green-200 font-shrikhand p-1 -translate-y-1 text-3xl ${
+        className={`text-biscuits-green-200 font-shrikhand text-3xl ${
           inView && "animate-fade-left animate-delay-400"
         }`}
       >
@@ -24,7 +24,7 @@ const Board = ({ name, role, yearMajor, funFact, picture }) => {
 
       <div
         ref={ref}
-        className={`text-biscuits-green-200 font-omc p-1 -translate-y-2 text-xl ${
+        className={`text-biscuits-green-200 font-omc text-xl ${
           inView && "animate-fade-right animate-delay-400"
         }`}
       >
