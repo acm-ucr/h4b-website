@@ -2,7 +2,8 @@ import { IoMdClose } from "react-icons/io";
 
 const Modal = ({
   title = "Event Title",
-  time,
+  startTime,
+  endTime,
   location = "No Location Specified",
   description = "No Description Specified",
   setEvents,
@@ -17,8 +18,8 @@ const Modal = ({
       </button>
       <div className="text-4xl mb-2 font-bold">{title}</div>
       <ul className="list-disc marker:text-biscuits-blue-100 marker:text-2xl list-inside">
-        <li>Start:</li>
-        <li>End:</li>
+        <li>Start: {startTime}</li>
+        <li>End: {endTime}</li>
         <li>{location}</li>
         <li>{description}</li>
       </ul>
