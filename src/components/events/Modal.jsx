@@ -4,6 +4,8 @@ const Modal = ({
   title = "Event Title",
   startTime,
   endTime,
+  startAMPM,
+  endAMPM,
   location = "No Location Specified",
   description = "No Description Specified",
   setEvents,
@@ -18,8 +20,12 @@ const Modal = ({
       </button>
       <div className="text-4xl mb-2 font-bold">{title}</div>
       <ul className="list-disc marker:text-biscuits-blue-100 marker:text-2xl list-inside">
-        <li>Start: {startTime}</li>
-        <li>End: {endTime}</li>
+        <li>
+          Start: {startTime} {startAMPM}
+        </li>
+        <li>
+          End: {endTime} {endAMPM}
+        </li>
         <li>{location}</li>
         <li>{description}</li>
       </ul>
