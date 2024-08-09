@@ -98,20 +98,8 @@ const CalendarEvents = () => {
               title={selectedEvent.summary}
               description={selectedEvent.description}
               location={selectedEvent.location}
-              startTime={selectedEvent.start.toLocaleTimeString().split(":")[0]}
-              startAMPM={
-                selectedEvent.start
-                  .toLocaleTimeString()
-                  .split(":")[2]
-                  .split(" ")[1]
-              }
-              endTime={selectedEvent.end.toLocaleTimeString().split(":")[0]}
-              endAMPM={
-                selectedEvent.end
-                  .toLocaleTimeString()
-                  .split(":")[2]
-                  .split(" ")[1]
-              }
+              startTime={selectedEvent.start}
+              endTime={selectedEvent.end}
             />
           )}
           {console.log(selectedEvent)}

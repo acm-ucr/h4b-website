@@ -4,8 +4,6 @@ const Modal = ({
   title = "Event Title",
   startTime,
   endTime,
-  startAMPM,
-  endAMPM,
   location = "No Location Specified",
   description = "No Description Specified",
   setEvents,
@@ -21,10 +19,12 @@ const Modal = ({
       <div className="text-4xl mb-2 font-bold">{title}</div>
       <ul className="list-disc marker:text-biscuits-blue-100 marker:text-2xl list-inside">
         <li>
-          Start: {startTime} {startAMPM}
+          Start: {startTime.toLocaleTimeString().split(":")[0]}{" "}
+          {startTime.toLocaleTimeString().split(":")[2].split(" ")[1]}
         </li>
         <li>
-          End: {endTime} {endAMPM}
+          End: {endTime.toLocaleTimeString().split(":")[0]}{" "}
+          {endTime.toLocaleTimeString().split(":")[2].split(" ")[1]}
         </li>
         <li>{location}</li>
         <li>{description}</li>
