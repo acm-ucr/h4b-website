@@ -8,8 +8,8 @@ const Upcoming = () => {
   return (
     <div
       className={`${
-        inView && "animate-fade-right animate-delay-200"
-      } flex flex-col justify-center text-center`}
+        inView && "animate-fade-right animate-delay-200 "
+      } flex flex-col justify-center text-center my-[5%]`}
     >
       <Title text="Upcoming Events" color="purple" />
       <div

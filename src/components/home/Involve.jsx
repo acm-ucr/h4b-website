@@ -9,7 +9,7 @@ const Involve = () => {
     <div
       className={`${
         inView && "animate-fade-left"
-      } flex flex-col justify-center items-center text-center`}
+      } flex flex-col justify-center items-center text-center mt-[5%]`}
     >
       <Title text="Get Involved" color="red" />
       <div
