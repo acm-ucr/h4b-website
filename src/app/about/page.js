@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import springPicture from "@/public/images/spring/spring24_9.webp";
-import { ABOUT } from "@/data/aboutPage";
+import { ABOUT } from "@/data/about/About";
 import Title from "@/components/Title";
 import Picture from "@/components/Picture";
 import Subtitle from "@/components/Subtitle";
@@ -11,7 +11,7 @@ import useView from "@/components/useView";
 const Page = () => {
   const [ref, inView] = useView();
   return (
-    <div className="bg-biscuits-green-100 flex flex-col items-center gap-y-10 p-4 md:p-10">
+    <div className="bg-blobs1 bg-cover bg-biscuits-green-100 flex flex-col items-center gap-y-10 p-4 md:p-10">
       <Title text="About Us" color="red" />
       <Picture
         classname="flex justify-center"
