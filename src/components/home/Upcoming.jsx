@@ -7,13 +7,13 @@ const Upcoming = () => {
   const [inView, ref] = useView();
   return (
     <div
+      ref={ref}
       className={`${
         inView && "animate-fade-right animate-delay-200 "
       } flex flex-col justify-center text-center my-[5%]`}
     >
       <Title text="Upcoming Events" color="purple" />
       <div
-        ref={ref}
         className={`${
           inView && "animate-fade-up"
         }  m-10 md:m-11 grid md:grid-cols-2 grid-cols-1 gap-4`}

@@ -7,15 +7,15 @@ const Involve = () => {
   const [inView, ref] = useView();
   return (
     <div
+      ref={ref}
       className={`${
         inView && "animate-fade-left"
       } flex flex-col justify-center items-center text-center mt-[5%]`}
     >
       <Title text="Get Involved" color="red" />
       <div
-        ref={ref}
         className={`${
-          inView && "animate-fade-left animate-delay-75 animate-duration-500"
+          inView && "animate-fade-left"
         } flex font-light justify-center text-center text-2xl pb-4 w-1/2`}
       >
         Our food & information tabling occurs every Wednesday from 9 AM to 3 PM
