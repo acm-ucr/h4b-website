@@ -20,34 +20,28 @@ const Page = () => {
         image={springPicture}
         alt="Spring 24 Picture"
       />
-      {ABOUT.map((section, index) => {
-        // Base animation class for both Subtitle and paragraphs
-        const animationClass =
-          "animate-fade-up animate-once animate-duration-[1500ms] animate-ease-linear";
-
-        // Define delays to stagger animations
-        const subtitleDelay = "animate-delay-0";
-        const paragraphDelay = "animate-delay-500"; // Adjust this to your liking
-
-        return (
-          <div key={index} ref={ref} className="mb-8 text-center">
-            <Subtitle
-              color="text-biscuits-green-200"
-              text={section.subtitle}
-              animate={inView}
-              animationClass={animationClass}
-              delay={subtitleDelay}
-            />
-            <div
-              className={`md:text-2xl text-base font-inika md:w-2/3 w-10/12 mx-auto ${
-                inView ? `${animationClass} ${paragraphDelay}` : ""
-              }`}
-            >
-              {section.paragraph}
+      <div ref={ref}>
+        {ABOUT.map((section, index) => {
+          return (
+            <div key={index} className="mb-8 text-center">
+              <Subtitle
+                color="text-biscuits-green-200"
+                text={section.subtitle}
+                animate={inView}
+              />
+              <div
+                className={`md:text-2xl text-base font-inika md:w-2/3 w-10/12 mx-auto ${
+                  inView
+                    ? `animate-fade-up animate-once animate-duration-[1500ms] animate-ease-linear animate-delay-500`
+                    : ""
+                }`}
+              >
+                {section.paragraph}
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 };

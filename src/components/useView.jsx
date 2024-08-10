@@ -11,7 +11,7 @@ const useView = () => {
       }
       setInView(
         ref.current.getBoundingClientRect().top <= window.innerHeight &&
-          ref.current.getBoundingClientRect().bottom >= 0,
+          ref.current.getBoundingClientRect().bottom >= 0
       );
     };
     document.addEventListener("scroll", onScroll, true);
