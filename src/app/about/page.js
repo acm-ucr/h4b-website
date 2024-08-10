@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import springPicture from "@/public/images/spring/spring24_9.webp";
-import { ABOUT } from "@/data/aboutPage";
+import { ABOUT } from "@/data/about/About";
 import Title from "@/components/Title";
 import Picture from "@/components/Picture";
 import Subtitle from "@/components/Subtitle";
