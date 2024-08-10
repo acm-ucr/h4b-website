@@ -28,11 +28,32 @@ const CalendarEvents = () => {
     },
   ];
 
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
   return (
     <div className="relative flex flex-col">
       {/* Calendar Section */}
-      <section className="w-full flex-grow flex justify-center items-center">
-        <div className="w-full h-[95vh] relative">
+      <span
+        className="-rotate-90 text-biscuits-green-200 font-shrikhand text-3xl absolute md:translate-x-8 md:translate-y-[480px] -translate-x-12 translate-y-[440px]"
+        style={{ width: "120px", textAlign: "center" }}
+      >
+        {months[date.getMonth()]}
+      </span>
+      <section className="w-full flex-grow flex justify-center items-center gap-x-4">
+        <div className="w-5/6 h-[95vh] relative">
           <Calendar
             className="w-full m-0 p-0 2xl:text-3xl text-xl"
             date={date}
