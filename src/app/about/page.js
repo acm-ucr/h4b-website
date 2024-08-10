@@ -20,6 +20,7 @@ const Page = () => {
         image={springPicture}
         alt="Spring 24 Picture"
       />
+      <div ref={ref} className={ANIMATION HERE}>
       {ABOUT.map((section, index) => {
         // Base animation class for both Subtitle and paragraphs
         const animationClass =
