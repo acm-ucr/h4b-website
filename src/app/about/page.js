@@ -27,7 +27,6 @@ const Page = () => {
               <Subtitle
                 color="text-biscuits-green-200"
                 text={section.subtitle}
-                animate={inView}
               />
               <div
                 className={`md:text-2xl text-base font-inika md:w-2/3 w-10/12 mx-auto ${
