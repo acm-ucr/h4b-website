@@ -51,7 +51,7 @@ const CalendarEvents = () => {
   }, []);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col py-[2%]">
       {/* Calendar Section */}
       <section className="w-full flex-grow flex justify-center items-center">
         <div className="w-11/12 h-[95vh] relative">
@@ -82,8 +82,8 @@ const CalendarEvents = () => {
                 className: `${
                   new Date(event).toLocaleDateString() ==
                   new Date().toLocaleDateString()
-                    ? "!bg-biscuits-orange"
-                    : "!bg-white"
+                    ? "!bg-biscuits-purple-100"
+                    : "!bg-biscuits-peach"
                 }`,
                 style: {
                   margin: 0,
