@@ -13,8 +13,13 @@ const Tabling = () => {
         text="How to Table"
       />
 
-      <Picture x={20} y={20} image={tabling1} className="w-3/4 px-4 my-4" />
-      <ul className="font-inika text-xl md:text-2xl list-decimal px-8 w-full md:px-0 md:w-3/4">
+      <Picture
+        x={20}
+        y={20}
+        image={tabling1}
+        className="w-3/4 px-4 my-4 mx-auto"
+      />
+      <ul className="font-inika text-lg md:text-2xl list-decimal px-8 w-full md:px-0 md:w-3/4">
         {TABLING.map((tabling, index) => (
           <li key={index} className="my-8">
             {tabling}
@@ -22,7 +27,12 @@ const Tabling = () => {
         ))}
       </ul>
 
-      <Picture x={20} y={20} image={tabling4} className="px-4 my-4 w-3/4" />
+      <Picture
+        x={20}
+        y={20}
+        image={tabling4}
+        className="px-4 my-4 w-3/4 mx-auto"
+      />
     </div>
   );
 };

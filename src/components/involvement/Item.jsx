@@ -13,7 +13,7 @@ const Item = ({ question, answer }) => {
       className="bg-biscuits-orange w-full p-4 rounded font-inika cursor-pointer"
       onClick={toggleAnswer}
     >
-      <div className="text-biscuits-brown-200 font-bold  text-xl md:text-3xl">
+      <div className="text-biscuits-brown-200 font-bold  text-lg md:text-3xl">
         {question}
       </div>
       <div className={`mt-2 ${clicked ? "" : "hidden"} text-black md:text-xl`}>
