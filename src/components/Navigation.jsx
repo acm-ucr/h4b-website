@@ -26,7 +26,7 @@ const NavBar = () => {
             <Image
               src={logo}
               alt="Logo"
-              className="w-20 hover:opacity-60 duration-300"
+              className="w-14 hover:opacity-60 duration-300"
             />
           </Link>
           <div className="hidden md:flex space-x-4">
