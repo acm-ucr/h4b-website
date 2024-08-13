@@ -31,8 +31,11 @@ const CalendarEvents = () => {
   return (
     <div className="relative flex flex-col">
       {/* Calendar Section */}
-      <section className="w-full flex-grow flex justify-center items-center">
-        <div className="w-full h-[95vh] relative">
+      <span className="-rotate-90 text-biscuits-purple-200 font-shrikhand text-6xl  items-center w-[120px] absolute lg:bottom-1/4 lg:block hidden">
+        {date.toLocaleString("default", { month: "long" })}
+      </span>
+      <section className="w-full flex-grow flex justify-center items-center gap-x-4">
+        <div className="w-5/6 h-[95vh] relative">
           <Calendar
             className="w-full m-0 p-0 2xl:text-3xl text-xl"
             date={date}
