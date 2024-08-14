@@ -1,4 +1,4 @@
-import Item from "@/components/Item";
+import Item from "@/components/involvement/Item";
 import Subtitle from "@/components/Subtitle";
 import QUESTIONS from "@/data/involve/Questions";
 
