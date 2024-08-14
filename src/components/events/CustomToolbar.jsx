@@ -31,6 +31,21 @@ const mapToNum = {
   Dec: "12",
 };
 
+const filters = [
+  {
+    topic: "H4B Food Tabling",
+    color: "bg-biscuits-pinkTabling",
+  },
+  {
+    topic: "H4B Events",
+    color: "bg-biscuits-orangeEvent",
+  },
+  {
+    topic: "Food Resources",
+    color: "bg-biscuits-blueResources",
+  },
+];
+
 const CustomToolbar = (event) => {
   return (
     <div className="flex items-center justify-center w-full text-5xl xl:text-6xl text-center relative h-60 md:h-80 xl:h-52">
@@ -58,6 +73,17 @@ const CustomToolbar = (event) => {
       </div>
       <div className="absolute top-28 xl:top-[50%] xl:left-[50%] xl:translate-x-[-50%] xl:translate-y-[-50%]">
         <Title text="Calendar of Events" color="purple" />
+      </div>
+      <div className="font-inika font-bold absolute right-[5%] m-0 p-0 flex flex-col">
+        {filters.map((filter, index) => (
+          <div key={index} xs={9} sm={3} className="p-1">
+            <p
+              className={`${filter.color} rounded-xl p-1 mb-1 px-12 text-center text-sm`}
+            >
+              {filter.topic}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );
