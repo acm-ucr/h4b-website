@@ -8,7 +8,7 @@ const Connect = ({ name, icon, link }) => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      {icon}
+      <span className="transition ease-in-out hover:scale-110">{icon}</span>
       <div className="text-xl">{name}</div>
     </Link>
   );
