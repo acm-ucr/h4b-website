@@ -17,7 +17,7 @@ const Tabling = () => {
         x={20}
         y={20}
         image={tabling1}
-        className="w-3/4 px-4 my-4 mx-auto"
+        className="w-3/4 mx-auto"
       />
       <ul className="font-inika text-lg md:text-2xl list-decimal px-8 w-full md:px-0 md:w-3/4">
         {TABLING.map((tabling, index) => (
