@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import springPicture from "@/public/images/spring/NewImg.png";
+import springPicture from "@/public/images/spring/NewImg.webp";
 import { ABOUT } from "@/data/about/About";
 import Title from "@/components/Title";
 import Picture from "@/components/Picture";
