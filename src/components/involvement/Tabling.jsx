@@ -31,7 +31,7 @@ const Tabling = () => {
         x={20}
         y={20}
         image={tabling4}
-        className="px-4 my-4 w-3/4 mx-auto"
+        className="w-3/4 mx-auto"
       />
     </div>
   );
