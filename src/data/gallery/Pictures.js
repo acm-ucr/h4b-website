@@ -52,15 +52,15 @@ import past11 from "@/public/images/past/past_11.webp";
 import past12 from "@/public/images/past/past_12.webp";
 import past13 from "@/public/images/past/past_13.webp";
 import past14 from "@/public/images/past/past_14.webp";
-import extra1 from "@/public/images/extra/extra_1.jpg";
-import extra2 from "@/public/images/extra/extra_2.jpg";
-import extra3 from "@/public/images/extra/extra_3.jpg";
-import extra4 from "@/public/images/extra/extra_4.jpg";
-import extra5 from "@/public/images/extra/extra_5.jpg";
-import extra6 from "@/public/images/extra/extra_6.jpg";
-import extra7 from "@/public/images/extra/extra_7.jpg";
-import extra8 from "@/public/images/extra/extra_8.jpg";
-import extra9 from "@/public/images/extra/extra_9.jpg";
+import extra1 from "@/public/images/extra/extra_1.webp";
+import extra2 from "@/public/images/extra/extra_2.webp";
+import extra3 from "@/public/images/extra/extra_3.webp";
+import extra4 from "@/public/images/extra/extra_4.webp";
+import extra5 from "@/public/images/extra/extra_5.webp";
+import extra6 from "@/public/images/extra/extra_6.webp";
+import extra7 from "@/public/images/extra/extra_7.webp";
+import extra8 from "@/public/images/extra/extra_8.webp";
+import extra9 from "@/public/images/extra/extra_9.webp";
 
 export const PICTURES = {
   fall: [
