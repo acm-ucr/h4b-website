@@ -2,7 +2,7 @@
 import useView from "@/components/useView";
 import React from "react";
 import Title from "@/components/Title";
-import FoodTabling from "@/components/gallery/FoodTabling";
+import TablingEvents from "@/components/gallery/TablingEvents";
 import QuarterlyEvents from "@/components/gallery/QuarterlyEvents";
 import PastEvents from "@/components/gallery/PastEvents";
 
@@ -17,7 +17,7 @@ const Page = () => {
         <Title text="Gallery" food="chip" />
       </div>
 
-      <FoodTabling />
+      <TablingEvents />
       <QuarterlyEvents />
       <PastEvents />
     </div>
