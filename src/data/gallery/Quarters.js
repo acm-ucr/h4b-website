@@ -1,8 +1,8 @@
 import fall from "@/public/images/fall/fall23_16.webp";
-import fallcuzNoWinterpic from "@/public/images/fall/fall23_20.webp";
+import winter from "@/public/images/fall/fall23_20.webp";
 import spring from "@/public/images/spring/spring24_9.webp";
 
-export const quarterlyEvents = [
+export const QUARTERS = [
   {
     title: "Fall",
     link: "/gallery/fall",
@@ -11,7 +11,7 @@ export const quarterlyEvents = [
   {
     title: "Winter",
     link: "/gallery/winter",
-    photo: fallcuzNoWinterpic,
+    photo: winter,
   },
   {
     title: "Spring",

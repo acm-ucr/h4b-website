@@ -6,16 +6,14 @@ import Tabling2 from "@/public/images/tabling/tabling_2.webp";
 import Tabling3 from "@/public/images/tabling/tabling_3.webp";
 import useView from "@/components/useView";
 
-const FoodTabling = () => {
+const TablingEvents = () => {
   const [inView, ref] = useView();
   return (
     <div
       ref={ref}
       className={`${inView && "animate-fade-right animate-once"} mb-14`}
     >
-      <div className="mb-10 flex justify-center">
-        <Subtitle text="Food Tabling" color="text-biscuits-green-200" />
-      </div>
+      <Subtitle text="Food Tabling" color="text-biscuits-green-200" />
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 place-items-center">
         <Image src={Tabling1} alt="Tabling" />
@@ -26,4 +24,4 @@ const FoodTabling = () => {
   );
 };
 
-export default FoodTabling;
+export default TablingEvents;

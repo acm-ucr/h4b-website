@@ -15,7 +15,7 @@ const NotFound = () => {
             <Title text="Error" color="red" />
             <Title text="4O4" />
           </div>
-          <Subtitle text="Page not found" color={"text-biscuits-red-200"} />
+          <Subtitle text="Page not found" color="text-biscuits-red-200" />
         </div>
       </div>
     </div>

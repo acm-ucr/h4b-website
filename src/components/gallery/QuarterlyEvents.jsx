@@ -1,7 +1,7 @@
 "use client";
 import Subtitle from "@/components/Subtitle";
 import Hoverable from "@/components/gallery/Hoverable";
-import { quarterlyEvents } from "@/data/gallery/QuarterlyEvents";
+import { QUARTERS } from "@/data/gallery/Quarters";
 import useView from "@/components/useView";
 
 const QuarterlyEvents = () => {
@@ -18,12 +18,12 @@ const QuarterlyEvents = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 place-items-center text-black">
-        {quarterlyEvents.map((QuarterlyEvents, index) => (
+        {QUARTERS.map((quarter, index) => (
           <Hoverable
             key={index}
-            link={QuarterlyEvents.link}
-            image={QuarterlyEvents.photo}
-            text={QuarterlyEvents.title}
+            link={quarter.link}
+            image={quarter.photo}
+            text={quarter.title}
           />
         ))}
       </div>
