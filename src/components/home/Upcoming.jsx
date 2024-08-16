@@ -16,7 +16,7 @@ const Upcoming = () => {
       <div
         className={`${
           inView && "animate-fade-left"
-        }  m-10 md:m-11 grid md:grid-cols-2 grid-cols-1 gap-4`}
+        } grid md:grid-cols-2 grid-cols-1 gap-4`}
       >
         <UpcomingCard />
         <UpcomingCard />
