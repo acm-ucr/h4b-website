@@ -8,8 +8,8 @@ const Connect = ({ name, icon, link }) => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      {icon}
-      <div className="text-xl">{name}</div>
+      <span className="transition ease-in-out hover:scale-110">{icon}</span>
+      <div className="text-xl font-shrikhand">{name}</div>
     </Link>
   );
 };

@@ -9,11 +9,11 @@ const Item = ({ question, answer }) => {
   };
 
   return (
-    <div className="bg-biscuits-orange w-full p-4 rounded font-inika">
-      <div
-        className="text-biscuits-brown-200 font-bold cursor-pointer text-xl md:text-3xl"
-        onClick={toggleAnswer}
-      >
+    <div
+      className="bg-biscuits-orange w-full p-4 rounded font-inika cursor-pointer"
+      onClick={toggleAnswer}
+    >
+      <div className="text-biscuits-brown-200 font-bold  text-lg md:text-3xl">
         {question}
       </div>
       <div className={`mt-2 ${clicked ? "" : "hidden"} text-black md:text-xl`}>
