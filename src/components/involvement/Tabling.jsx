@@ -12,7 +12,6 @@ const Tabling = () => {
         color="text-biscuits-brown-200"
         text="How to Table"
       />
-
       <Picture x={20} y={20} image={tabling1} className="w-3/4 mx-auto" />
       <ul className="font-inika text-lg md:text-2xl list-decimal px-8 w-full md:px-0 md:w-3/4">
         {TABLING.map((tabling, index) => (
@@ -21,7 +20,6 @@ const Tabling = () => {
           </li>
         ))}
       </ul>
-
       <Picture x={20} y={20} image={tabling4} className="w-3/4 mx-auto" />
     </div>
   );
