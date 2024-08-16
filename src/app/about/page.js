@@ -12,7 +12,7 @@ const Page = () => {
   const [inView, ref] = useView();
 
   return (
-    <div className="bg-biscuits-green-100 flex flex-col items-center gap-y-10 p-4 md:p-10">
+    <div className="bg-biscuits-green-100 bg-blobs1 md:bg-cover bg-contain flex flex-col items-center gap-y-10 p-4 md:p-10">
       <Title text="About Us" color="red" />
       <Picture
         x={10}
