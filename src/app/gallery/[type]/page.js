@@ -21,7 +21,7 @@ const Page = ({ params }) => {
   ) {
     return (
       <div className="bg-blobs1 md:bg-cover bg-contain bg-biscuits-green-100 flex flex-col text-7xl items-center pt-10">
-        <Title text={PAGES[params.type]} food={"chip"} />
+        <Title text={PAGES[params.type]} food="chip" />
         <div className="grid grid-cols-1 lg:grid-cols-3 w-4/5 py-10 gap-2">
           {PICTURES[params.type].map((image, index) => (
             <GalleryImage

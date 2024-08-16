@@ -8,9 +8,12 @@ const FAQs = () => {
       <Subtitle color="text-biscuits-brown-200" text="FAQS" />
       <div className="w-full flex flex-col items-start gap-y-2">
         {QUESTIONS.map((faq, index) => (
-          <div key={index} className="w-full">
-            <Item question={faq.question} answer={faq.answer} />
-          </div>
+          <Item
+            key={index}
+            question={faq.question}
+            answer={faq.answer}
+            className="w-full"
+          />
         ))}
       </div>
     </div>
