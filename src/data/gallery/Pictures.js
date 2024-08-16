@@ -52,6 +52,15 @@ import past11 from "@/public/images/past/past_11.webp";
 import past12 from "@/public/images/past/past_12.webp";
 import past13 from "@/public/images/past/past_13.webp";
 import past14 from "@/public/images/past/past_14.webp";
+import extra1 from "@/public/images/extra/extra_1.jpg";
+import extra2 from "@/public/images/extra/extra_2.jpg";
+import extra3 from "@/public/images/extra/extra_3.jpg";
+import extra4 from "@/public/images/extra/extra_4.jpg";
+import extra5 from "@/public/images/extra/extra_5.jpg";
+import extra6 from "@/public/images/extra/extra_6.jpg";
+import extra7 from "@/public/images/extra/extra_7.jpg";
+import extra8 from "@/public/images/extra/extra_8.jpg";
+import extra9 from "@/public/images/extra/extra_9.jpg";
 
 export const PICTURES = {
   fall: [
@@ -115,5 +124,16 @@ export const PICTURES = {
     past12,
     past13,
     past14,
+  ],
+  extra: [
+    extra1,
+    extra2,
+    extra3,
+    extra4,
+    extra5,
+    extra6,
+    extra7,
+    extra8,
+    extra9,
   ],
 };
