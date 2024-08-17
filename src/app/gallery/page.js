@@ -4,7 +4,7 @@ import React from "react";
 import Title from "@/components/Title";
 import TablingEvents from "@/components/gallery/TablingEvents";
 import QuarterlyEvents from "@/components/gallery/QuarterlyEvents";
-import PastEvents from "@/components/gallery/PastEvents";
+import ExtraPhotos from "@/components/gallery/ExtraPhotos";
 
 const Page = () => {
   const [inView, ref] = useView();
@@ -19,7 +19,7 @@ const Page = () => {
 
       <TablingEvents />
       <QuarterlyEvents />
-      <PastEvents />
+      <ExtraPhotos />
     </div>
   );
 };
