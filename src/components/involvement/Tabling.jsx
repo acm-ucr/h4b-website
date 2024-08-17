@@ -1,12 +1,20 @@
+"use client";
 import { TABLING } from "@/data/involve/Tabling";
 import Picture from "../Picture";
 import Subtitle from "../Subtitle";
 import tabling1 from "@/public/images/tabling/tabling_1.webp";
 import tabling4 from "@/public/images/tabling/tabling_4.webp";
+import useView from "@/components/useView";
 
 const Tabling = () => {
+  const [inView, ref] = useView();
   return (
-    <div className="flex flex-col items-center gap-y-8">
+    <div
+      ref={ref}
+      className={`${
+        inView && "animate-fade-right animate-duration-1000"
+      } flex flex-col items-center gap-y-8`}
+    >
       <Subtitle
         className="w-3/4"
         color="text-biscuits-brown-200"

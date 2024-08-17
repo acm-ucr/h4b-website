@@ -1,9 +1,18 @@
+"use client";
 import React from "react";
 import Button from "../Button";
 import Subtitle from "../Subtitle";
+import useView from "@/components/useView";
+
 const AdditionalInfo = () => {
+  const [inView, ref] = useView();
   return (
-    <div className="p-8 text-center flex flex-col items-center gap-y-10">
+    <div
+      ref={ref}
+      className={`${
+        inView && "animate-fade-right"
+      } p-8 text-center flex flex-col items-center gap-y-10`}
+    >
       <Subtitle color="text-biscuits-brown-200" text="Additional Info" />
       <div className="text-lg md:text-2xl text-center font-inika font-normal">
         Since a H4B board member will accompany you, we kindly ask for no more
