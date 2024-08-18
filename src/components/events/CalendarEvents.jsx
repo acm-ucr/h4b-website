@@ -14,6 +14,8 @@ const CalendarEvents = () => {
   const [events, setEvents] = useState([]);
   const [date, setDate] = useState(new Date());
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
     const startDate = new Date(
       new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
@@ -22,6 +24,7 @@ const CalendarEvents = () => {
       new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
     ).toISOString();
     const fetchData = async () => {
+      setIsClient(true);
       try {
         const response = await fetch(
           `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
@@ -30,17 +33,25 @@ const CalendarEvents = () => {
 
         const offset = new Date().getTimezoneOffset() * 60000;
         const data = await response.json();
-        const items = data.items.map((item) => {
-          item.allDay = !item.start.dateTime;
-          (item.start = item.start.dateTime
-            ? new Date(item.start.dateTime)
-            : new Date(new Date(item.start.date).getTime() + offset)),
-            (item.end = new Date(
+        const maxEvents = 4;
+        const today = new Date();
+
+        const items = data.items
+          .filter((item) => {
+            item.allDay = !item.start.dateTime;
+
+            item.start = item.start.dateTime
+              ? new Date(item.start.dateTime)
+              : new Date(new Date(item.start.date).getTime() + offset);
+
+            item.end = new Date(
               item.end.dateTime || new Date(item.end.date).getTime() + offset
-            )),
-            (item.hidden = false);
-          return item;
-        });
+            );
+
+            return item.start >= today;
+          })
+          .slice(0, maxEvents);
+
         setEvents(items);
       } catch (error) {
         console.error("Error fetching data: ", error);
@@ -54,7 +65,7 @@ const CalendarEvents = () => {
     <div className="flex flex-col py-[2%]">
       {/* Calendar Section */}
       <span className="-rotate-90 text-biscuits-purple-200 font-shrikhand text-6xl  items-center w-[120px] absolute lg:bottom-1/4 lg:block hidden">
-        {date.toLocaleString("default", { month: "long" })}
+        {isClient ? date.toLocaleString("default", { month: "long" }) : ""}
       </span>
       <section className="w-full flex-grow flex justify-center items-center gap-x-4">
         <div className="w-5/6 h-[95vh] relative">
