@@ -22,7 +22,7 @@ const ExtraPhotos = () => {
         <Hoverable
           link="/gallery/more"
           image={BoardPhoto}
-          text="Board Photos"
+          text="More Photos"
         />
       </div>
     </div>
