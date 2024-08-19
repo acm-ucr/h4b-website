@@ -14,7 +14,9 @@ const CalendarEvents = () => {
   const [events, setEvents] = useState([]);
   const [date, setDate] = useState(new Date());
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [isClient, setIsClient] = useState(false);
   useEffect(() => {
+    setIsClient(true);
     const startDate = new Date(
       new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
     ).toISOString();
@@ -54,7 +56,7 @@ const CalendarEvents = () => {
     <div className="flex flex-col py-[2%]">
       {/* Calendar Section */}
       <span className="-rotate-90 text-biscuits-purple-200 font-shrikhand text-6xl  items-center w-[120px] absolute lg:bottom-1/4 lg:block hidden">
-        {date.toLocaleString("default", { month: "long" })}
+        {isClient ? date.toLocaleString("default", { month: "long" }) : ""}
       </span>
       <section className="w-full flex-grow flex justify-center items-center gap-x-4">
         <div className="w-5/6 h-[95vh] relative">
