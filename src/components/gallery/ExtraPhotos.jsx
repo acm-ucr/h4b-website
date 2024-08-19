@@ -20,7 +20,7 @@ const ExtraPhotos = () => {
       <div className="text-textColor grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center">
         <Hoverable link="/gallery/past" image={PastEvent} text="Past Events" />
         <Hoverable
-          link="/gallery/board"
+          link="/gallery/more"
           image={BoardPhoto}
           text="Board Photos"
         />
