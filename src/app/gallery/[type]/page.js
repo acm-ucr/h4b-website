@@ -4,7 +4,7 @@ import GalleryImage from "@/components/gallery/GalleryImage";
 import { PICTURES } from "@/data/gallery/Pictures.js";
 
 export async function generateStaticParams() {
-  const allPages = ["fall", "winter", "spring", "past"];
+  const allPages = ["fall", "winter", "spring", "past", "extra"];
   return allPages.map((page) => ({ type: page }));
 }
 
@@ -14,6 +14,7 @@ const Page = ({ params }) => {
     winter: "Winter 2024",
     spring: "Spring 2024",
     past: "Past",
+    extra: "Extra",
   };
   if (
     PAGES.hasOwnProperty(params.type) &&

@@ -2,7 +2,7 @@
 import Subtitle from "@/components/Subtitle";
 import Hoverable from "@/components/gallery/Hoverable";
 import PastEvent from "@/public/images/past/past_3.webp";
-import BoardPhoto from "@/public/images/extra/extra_2.webp";
+import ExtraPhoto from "@/public/images/extra/extra_2.webp";
 import useView from "@/components/useView";
 
 const ExtraPhotos = () => {
@@ -20,9 +20,9 @@ const ExtraPhotos = () => {
       <div className="text-textColor grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center">
         <Hoverable link="/gallery/past" image={PastEvent} text="Past Events" />
         <Hoverable
-          link="/gallery/more"
-          image={BoardPhoto}
-          text="More Photos"
+          link="/gallery/extra"
+          image={ExtraPhoto}
+          text="Extra Photos"
         />
       </div>
     </div>
