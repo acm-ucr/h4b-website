@@ -1,22 +1,20 @@
 import React from "react";
+import { COLORS } from "@/data/events/Color";
 
 const CustomEvent = ({ event }) => {
-  const getColorClass = () => {
-    if (event.title.includes("Tabling")) {
-      return "bg-biscuits-pinkTabling";
+  const getStyle = () => {
+    if (event.summary.toLowerCase().includes("tabling")) {
+      return COLORS["tabling"].event;
+    } else if (event.summary.toLowerCase().includes("resources")) {
+      return COLORS["resources"].event;
     }
-    if (event.title.includes("Event")) {
-      return "bg-biscuits-orangeEvent";
-    }
-    return "bg-biscuits-blueResources";
+    return "bg-biscuits-orangeEvent";
   };
 
-  const colorClass = getColorClass();
-
   return (
-    <div className={`rounded-lg p-2 mb-2 ${colorClass}`}>
-      <p className="text-black truncate text-center text-sm font-shrikhand">
-        {event.title}
+    <div className={`rounded-lg p-2 mb-2  ${getStyle()}`}>
+      <p className="truncate text-center text-sm font-shrikhand">
+        {event.summary}
       </p>
     </div>
   );
