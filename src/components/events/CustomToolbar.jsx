@@ -74,7 +74,7 @@ const CustomToolbar = (event) => {
       <div className="absolute top-28 xl:top-[50%] xl:left-[50%] xl:translate-x-[-50%] xl:translate-y-[-50%]">
         <Title text="Calendar of Events" color="purple" />
       </div>
-      <div className="font-inika font-bold absolute top-40 xl:top-10 xl:right-[5%] m-0 py-20 md:p-0 flex flex-col">
+      <div className="font-fredoka font-semibold absolute top-40 xl:top-10 xl:right-[5%] m-0 py-20 md:p-0 flex flex-col">
         {filters.map((filter, index) => (
           <div key={index} xs={9} sm={3} className="p-1">
             <p
