@@ -7,6 +7,7 @@ import CustomEvent from "./CustomEvents";
 import CustomHeader from "./CustomHeader";
 import CustomToolbar from "./CustomToolbar";
 import Modal from "./Modal";
+import "./rbc.css";
 
 const mLocalizer = momentLocalizer(moment);
 
@@ -58,10 +59,10 @@ const CalendarEvents = () => {
       <span className="-rotate-90 text-biscuits-purple-200 font-shrikhand text-6xl  items-center w-[120px] absolute lg:bottom-1/4 lg:block hidden">
         {isClient ? date.toLocaleString("default", { month: "long" }) : ""}
       </span>
-      <section className="w-full flex-grow flex justify-center items-center gap-x-4">
+      <section className="w-full flex-grow flex justify-center items-center gap-x-4 ">
         <div className="w-5/6 h-[95vh] relative">
           <Calendar
-            className="w-full m-0 p-0 2xl:text-3xl text-xl"
+            className="w-full m-0 p-0 2xl:text-3xl !border-biscuits-purple-200 !text-lg !font-fredoka"
             date={date}
             onNavigate={(newDate) => {
               setDate(newDate);
@@ -88,8 +89,8 @@ const CalendarEvents = () => {
                   new Date(event).toLocaleDateString() ==
                   new Date().toLocaleDateString()
                     ? "!bg-biscuits-purple-100"
-                    : "!bg-biscuits-peach"
-                }`,
+                    : "!bg-transparent"
+                } !border-biscuits-purple-200 !border-dotted`,
                 style: {
                   margin: 0,
                   padding: 0,

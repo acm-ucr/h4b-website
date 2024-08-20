@@ -1,6 +1,6 @@
 export const COLORS = {
   tabling: {
-    event: "bg-biscuits-pinkTabling text-biscuits-purple-200",
+    event: "bg-biscuits-pinkTabling",
     modal: "border-biscuits-pinkTabling",
   },
   resources: {
