@@ -21,7 +21,7 @@ const Title = ({ text, food, color }) => {
       </div>
 
       {food && COOKIES[food] && (
-        <div className="ml-4 ml-2 flex items-center">
+        <div className="ml-2 flex items-center">
           <Image
             src={COOKIES[food]}
             alt={`${food} cookies`}
