@@ -50,7 +50,7 @@ module.exports = {
         blobs1: "url('/assets/blobs1.svg')",
       },
       textShadow: {
-        sm: "0 1px 2px var(--tw-shadow-color)",
+        sm: "0 3px 0px var(--tw-shadow-color)",
         DEFAULT: "-4px 4px 0px var(--tw-shadow-color)",
         lg: "0 8px 16px var(--tw-shadow-color)",
       },
