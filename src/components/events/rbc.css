@@ -1,0 +1,19 @@
+.rbc-month-view {
+  border-style: dotted;
+  border-color: #58437c;
+}
+
+.rbc-header {
+  border-style: dotted;
+  border-color: #58437c;
+}
+
+.rbc-header + .rbc-header {
+  border-style: dotted;
+  border-color: #58437c;
+}
+
+.rbc-month-row + .rbc-month-row {
+  border-style: dotted;
+  border-color: #58437c;
+}

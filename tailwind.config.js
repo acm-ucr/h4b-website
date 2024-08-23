@@ -15,6 +15,7 @@ module.exports = {
         shrikhand: ["var(--font-shrikhand)"],
         omc: ["var(--font-omc)"],
         gurajada: ["var(--font-gurajada)"],
+        fredoka: ["var(--font-fredoka)"],
       },
       colors: {
         biscuits: {

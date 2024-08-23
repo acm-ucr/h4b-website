@@ -20,7 +20,7 @@ const Landing = () => {
       />
 
       <Image
-        className="md:hidden"
+        className="mt-[7%] md:hidden"
         src={mobileLanding}
         alt="mobileLanding"
         width={280}
