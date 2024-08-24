@@ -17,7 +17,7 @@ const Support = () => {
         <Image
           src={standing}
           alt="standing"
-          className="pb-4 animate-wiggle animate-twice animate-ease-out"
+          className="pb-4 animate-wiggle animate-twice animate-ease-out md:w-full w-2/3"
         />
         <div className="flex flex-col items-center gap-y-8 pt-12 md:pt-0">
           <Subtitle color="text-biscuits-brown-200" text="Donations" />
