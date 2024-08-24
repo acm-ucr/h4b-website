@@ -14,14 +14,7 @@ const Page = () => {
   return (
     <div className="bg-biscuits-green-100 bg-blobs1 md:bg-cover bg-contain flex flex-col items-center gap-y-10 p-4 md:p-10">
       <Title text="About Us" color="red" />
-      <Picture
-        x={10}
-        y={10}
-        image={springPicture}
-        alt="Spring 24 Picture"
-        width={855}
-        height={600}
-      />
+      <Picture x={25} y={25} image={springPicture} alt="Spring 24 Picture" />
       <div ref={ref} className="w-full">
         {ABOUT.map((section, index) => {
           return (
