@@ -13,11 +13,11 @@ const Support = () => {
   return (
     <div ref={ref} className={`${inView && "animate-fade-up"}`}>
       <Title text="Support Us" food="croissant" color="gray" />
-      <div className="flex flex-wrap gap-x-6 py-14 justify-evenly items-center">
+      <div className="flex md:flex-row flex-col gap-x-6 py-14 justify-evenly items-center">
         <Image
           src={standing}
           alt="standing"
-          className="pb-4 animate-wiggle animate-twice animate-ease-out"
+          className="pb-4 animate-wiggle animate-twice animate-ease-out md:w-1/3 w-11/12"
         />
         <div className="flex flex-col items-center gap-y-8 pt-12 md:pt-0">
           <Subtitle color="text-biscuits-brown-200" text="Donations" />
