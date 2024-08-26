@@ -60,7 +60,7 @@ const CalendarEvents = () => {
         {isClient ? date.toLocaleString("default", { month: "long" }) : ""}
       </span>
       <section className="w-full flex-grow flex justify-center items-center gap-x-4 ">
-        <div className="w-5/6 h-[95vh] relative">
+        <div className="md:w-5/6 w-11/12 h-[95vh] relative">
           <Calendar
             className="w-full m-0 p-0 2xl:text-3xl !border-biscuits-purple-200 !text-lg !font-fredoka"
             date={date}
