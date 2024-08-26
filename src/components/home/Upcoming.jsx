@@ -50,7 +50,7 @@ const Upcoming = () => {
           });
 
           // Extract the day (number)
-          const day = item.start.getDate();
+          const date = item.start.getDate();
 
           // Extract the time in AM/PM format
           const time = item.start.toLocaleString("en-US", {
@@ -59,7 +59,7 @@ const Upcoming = () => {
             hour12: true,
           });
           item.month = month;
-          item.day = day;
+          item.date = date;
           item.time = time;
           return item;
         });
