@@ -12,7 +12,9 @@ const Goal = () => {
       <Title text="Our Goal" />
       <div
         ref={ref}
-        className={`${inView && "animate-fade-up"} w-1/2 self-center text-2xl`}
+        className={`${
+          inView && "animate-fade-up"
+        } w-3/4 md:w-1/2 self-center text-l md:text-2xl`}
       >
         Hungry 4 Biscuits was created to encourage our community to give back to
         the Inland Empire, be compassionate towards those who reside there, and
