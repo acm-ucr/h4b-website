@@ -18,18 +18,19 @@ const Page = () => {
       <div ref={ref} className="w-full">
         {ABOUT.map((section, index) => {
           return (
-            <div key={index} className="mb-8 text-center">
+            <div
+              key={index}
+              className={`mb-8 text-center ${
+                inView
+                  ? `animate-fade-up animate-duration-300 animate-ease-linear animate-delay-500`
+                  : ""
+              }`}
+            >
               <Subtitle
                 color="text-biscuits-green-200"
                 text={section.subtitle}
               />
-              <div
-                className={`mt-4 md:mt-6 text-lg md:text-xl font-inika md:w-2/3 w-10/12 mx-auto ${
-                  inView
-                    ? `animate-fade-up animate-once animate-duration-[1500ms] animate-ease-linear animate-delay-500`
-                    : ""
-                }`}
-              >
+              <div className="mt-4 md:mt-6 text-lg md:text-xl font-inika md:w-2/3 w-10/12 mx-auto">
                 {section.paragraph}
               </div>
             </div>
