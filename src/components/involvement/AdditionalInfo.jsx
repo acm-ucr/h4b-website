@@ -11,7 +11,7 @@ const AdditionalInfo = () => {
       ref={ref}
       className={`${
         inView && "animate-fade-right"
-      } p-8 text-center flex flex-col items-center gap-y-10`}
+      } md:py-[5%] py-[10%] text-center flex flex-col items-center md:w-full w-2/3 gap-y-10`}
     >
       <Subtitle color="text-biscuits-brown-200" text="Additional Info" />
       <div className="text-lg md:text-2xl text-center font-inika font-normal">

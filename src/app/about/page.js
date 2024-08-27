@@ -37,7 +37,7 @@ const Page = () => {
         })}
       </div>
       <div className="flex justify-center w-full -mt-4 mb-8">
-        <Button text="Get Involved" link="/involve" />
+        <Button text="GET INVOLVED" link="/involve" />
       </div>
     </div>
   );

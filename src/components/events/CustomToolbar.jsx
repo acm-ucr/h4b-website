@@ -76,7 +76,7 @@ const CustomToolbar = (event) => {
         {filters.map((filter, index) => (
           <div key={index} xs={9} sm={3} className="p-1">
             <p
-              className={`${filter.color} rounded-xl p-1 mb-1 px-12 text-center text-sm`}
+              className={`${filter.color} rounded-xl p-1 mb-1 px-12 text-center md:text-lg text-sm`}
             >
               {filter.topic}
             </p>

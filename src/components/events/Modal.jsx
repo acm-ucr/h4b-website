@@ -19,7 +19,7 @@ const Modal = ({
   };
   return (
     <div
-      className={`flex-col p-6 fixed rounded-3xl border-8 w-1/3 bg-white ${getStyle()} z-50 top-[45%] translate-x-2/3`}
+      className={`flex-col p-6 fixed rounded-3xl border-8 md:w-1/3 w-11/12 bg-white ${getStyle()} z-50 top-[45%] md:translate-x-2/3 -translate-x-5`}
     >
       <button
         onClick={() => setEvents(null)}

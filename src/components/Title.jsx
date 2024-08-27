@@ -11,13 +11,11 @@ const Title = ({ text, food, color }) => {
   }
 
   return (
-    <div className="flex flex-row justify-center">
-      <div className="inset-0 flex justify-center items-top p-3">
-        <div
-          className={`md:text-shadow text-shadow-sm ${darkColor} font-omc text-5xl md:text-8xl mb-2 drop-shadow left-1 bottom-0.5 ${lightColor} text-center`}
-        >
-          {text}
-        </div>
+    <div className="flex flex-row w-fit justify-center self-center">
+      <div
+        className={`md:text-shadow text-shadow-sm ${darkColor} font-omc text-5xl lg:text-8xl sm:text-6xl mb-2 drop-shadow left-1 bottom-0.5 ${lightColor} text-center`}
+      >
+        {text}
       </div>
 
       {food && COOKIES[food] && (
@@ -25,9 +23,7 @@ const Title = ({ text, food, color }) => {
           <Image
             src={COOKIES[food]}
             alt={`${food} cookies`}
-            width={100}
-            height={100}
-            className="w-12 h-12"
+            className="w-16 h-16"
           />
         </div>
       )}
