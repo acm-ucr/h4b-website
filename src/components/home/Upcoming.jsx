@@ -61,6 +61,11 @@ const Upcoming = () => {
           item.month = month;
           item.date = date;
           item.time = time;
+          if (item.description)
+            item.description = item?.description.replace(
+              /<\/?(?!br\b)[^>]+>/gi,
+              ""
+            );
           return item;
         });
 

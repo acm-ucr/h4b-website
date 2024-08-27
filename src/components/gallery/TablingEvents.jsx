@@ -18,7 +18,7 @@ const TablingEvents = () => {
       >
         <Subtitle text="Food Tabling" color="text-biscuits-green-200" />
       </div>
-      <div className="mb-14 pt-10 grid grid-cols-1 lg:grid-cols-3 gap-8 place-items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 place-items-center">
         <Image src={Tabling1} alt="Tabling" />
         <Image src={Tabling2} alt="Tabling" />
         <Image src={Tabling3} alt="Tabling" />
