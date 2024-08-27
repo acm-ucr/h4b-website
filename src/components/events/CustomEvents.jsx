@@ -12,7 +12,9 @@ const CustomEvent = ({ event }) => {
   };
 
   return (
-    <div className={`rounded-lg p-2 mb-2 ${getStyle()}`}>
+    <div
+      className={`rounded-lg p-2 mb-2 ${getStyle()} md:h-full h-8 items-center`}
+    >
       <p className="truncate text-center md:text-xl text-sm font-fredoka font-semibold text-black">
         {event.summary}
       </p>

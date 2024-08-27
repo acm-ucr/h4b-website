@@ -22,7 +22,10 @@ const Involve = () => {
         around the Bell Tower All that is needed to participate is fill the Food
         Tabling Sign-Up Sheet to choose your preferred time slot
       </div>
-      <Button text="SIGN UP" link="google.com" />
+      <Button
+        text="SIGN UP"
+        link="https://docs.google.com/forms/d/e/1FAIpQLSduexmqB7bXaydEKOG5h7GjIwLGRVT0FdIqyYBE4WzyNO2k2g/viewform"
+      />
     </div>
   );
 };

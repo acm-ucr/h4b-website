@@ -108,7 +108,6 @@ const CalendarEvents = () => {
               endTime={selectedEvent.end}
             />
           )}
-          {console.log(selectedEvent)}
         </div>
       </section>
     </div>

@@ -11,7 +11,7 @@ const FAQs = () => {
       ref={ref}
       className={`${
         inView && "animate-fade-left"
-      } bg-biscuits-peach bg-opacity-0 md:w-11/12 w-5/6 md:p-8 py-8 px-4 text-left flex flex-col items-center gap-y-6`}
+      } bg-biscuits-peach bg-opacity-0 md:w-11/12 w-5/6 md:pt-[5%] pt-[10%] text-left flex flex-col items-center gap-y-6`}
     >
       <Subtitle color="text-biscuits-brown-200" text="FAQS" />
       <div className="w-full flex flex-col items-start gap-y-2">
