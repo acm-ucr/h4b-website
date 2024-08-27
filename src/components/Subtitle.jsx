@@ -7,7 +7,7 @@ const Subtitle = ({ color, text }) => {
   return (
     <div
       ref={ref}
-      className={`font-bold font-shrikhand text-center text-4xl md:text-6xl ${color} ${
+      className={`font-bold font-shrikhand text-center text-4xl lg:text-6xl ${color} ${
         inView
           ? `animate-fade-up animate-once animate-duration-[1500ms] animate-ease-linear`
           : ""
