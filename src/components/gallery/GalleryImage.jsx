@@ -10,7 +10,7 @@ const GalleryImage = ({ src, alt }) => {
     <div
       ref={ref}
       className={`${
-        inView && "animate-fade-down"
+        inView && "animate-fade-down animate-once"
       } transition-transform duration-100 ease-in-out`}
     >
       <Image src={src} alt={alt} />

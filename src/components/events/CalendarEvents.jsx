@@ -54,12 +54,12 @@ const CalendarEvents = () => {
   }, []);
 
   return (
-    <div className="flex flex-col py-[2%]">
+    <div className="flex flex-col py-[2%] animate-delay-100 animate-fade-up">
       {/* Calendar Section */}
       <span className="-rotate-90 text-biscuits-purple-200 font-shrikhand text-6xl  items-center w-[120px] absolute lg:bottom-1/4 xl:block hidden">
         {isClient ? date.toLocaleString("default", { month: "long" }) : ""}
       </span>
-      <section className="w-full flex-grow flex justify-center items-center gap-x-4 ">
+      <section className="w-full flex-grow flex justify-center items-center gap-x-4">
         <div className="md:w-5/6 w-11/12 h-[95vh] relative">
           <Calendar
             className="w-full m-0 p-0 2xl:text-3xl !border-biscuits-purple-200 !text-lg !font-fredoka"
