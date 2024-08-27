@@ -8,9 +8,8 @@ import useView from "@/components/useView";
 const ExtraPhotos = () => {
   const [inView, ref] = useView();
   return (
-    <div className="flex flex-col gap-y-8">
+    <div ref={ref} className="flex flex-col gap-y-8">
       <div
-        ref={ref}
         className={`${
           inView && "animate-flip-up animate-once"
         } flex justify-center`}
