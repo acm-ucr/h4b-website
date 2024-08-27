@@ -7,12 +7,12 @@ import useView from "@/components/useView";
 const QuarterlyEvents = () => {
   const [inView, ref] = useView();
   return (
-    <div className="mb-20">
+    <div className="flex flex-col gap-y-8">
       <div
         ref={ref}
         className={`${
           inView && "animate-flip-up animate-once"
-        } mb-10 flex justify-center`}
+        } flex justify-center`}
       >
         <Subtitle text="Quarterly Events" color="text-biscuits-green-200" />
       </div>

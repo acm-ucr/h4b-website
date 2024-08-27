@@ -45,11 +45,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${inika.className} ${shrikhand.variable} ${omc.variable} ${gurajada.variable} ${fredoka.variable}`}
-    >
-      <body>
+    <html lang="en">
+      <body
+        className={`flex flex-col min-h-screen ${inika.className} ${shrikhand.variable} ${omc.variable} ${gurajada.variable} ${fredoka.variable}`}
+      >
         <NavBar />
         {children}
         <Footer />

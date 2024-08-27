@@ -8,7 +8,7 @@ const UpcomingCard = ({
 }) => {
   return (
     <div className="flex flex-row rounded-3xl border-2 border-biscuits-purple-200 h-full min-w-full">
-      <div className="bg-biscuits-purple-100 items-center rounded-l-3xl justify-center text-white text-shadow py-3 w-1/3 font-bold">
+      <div className="flex flex-col bg-biscuits-purple-100 items-center rounded-l-3xl justify-center text-white text-shadow py-3 w-1/3 font-bold">
         <div className="text-3xl lg:text-6xl text-center font-inika">
           {month}
         </div>

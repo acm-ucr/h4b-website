@@ -10,9 +10,9 @@ export async function generateStaticParams() {
 
 const Page = ({ params }) => {
   const PAGES = {
-    fall: "Fall 2023",
-    winter: "Winter 2024",
-    spring: "Spring 2024",
+    fall: "Fall '23",
+    winter: "Winter '24",
+    spring: "Spring '24",
     past: "Past",
     extra: "Extra",
   };

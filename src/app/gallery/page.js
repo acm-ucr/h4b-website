@@ -9,13 +9,13 @@ import ExtraPhotos from "@/components/gallery/ExtraPhotos";
 const Page = () => {
   const [inView, ref] = useView();
   return (
-    <div className="bg-blobs1 md:bg-cover bg-contain bg-biscuits-green-100 min-h-screen p-7 w-full flex flex-col items-center">
-      <div
+    <div className="bg-blobs1 lg:bg-cover bg-contain bg-biscuits-green-100 py-[2%] px-7 w-full flex flex-col items-center justify-center gap-y-8">
+      <Title
+        text="Gallery"
+        food="chip"
         ref={ref}
         className={`${inView && "animate-fade-up"} flex justify-center mb-10`}
-      >
-        <Title text="Gallery" food="chip" />
-      </div>
+      />
 
       <TablingEvents />
       <QuarterlyEvents />
