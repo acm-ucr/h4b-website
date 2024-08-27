@@ -64,7 +64,7 @@ const Upcoming = () => {
           return item;
         });
 
-        setEvents(itemsMap);
+        setEvents(itemsMap.slice(0, 5));
       } catch (error) {
         console.error("Error fetching data: ", error);
       }
@@ -77,62 +77,30 @@ const Upcoming = () => {
       ref={ref}
       className={`${
         inView && "animate-fade-left animate-delay-200 "
-      } flex flex-col justify-center text-center my-[5%]`}
+      } flex flex-col justify-center text-center my-[5%] w-5/6`}
     >
       <Title text="Upcoming Events" color="purple" />
+      {events.length === 0 && (
+        <div className="text-6xl font-omc text-biscuits-purple-200 self-center">
+          No upcoming events
+        </div>
+      )}
       <div
         className={`${
           inView && "animate-fade-left"
-        } grid md:grid-cols-2 grid-cols-1 gap-4`}
+        } grid md:grid-cols-2 grid-cols-1 gap-4 w-full self-center`}
       >
-        {events[0] ? (
+        {events?.map((event, index) => (
           <UpcomingCard
-            event={events[0].summary}
-            location={events[0].location}
-            description={events[0].description}
-            month={events[0].month}
-            date={events[0].date}
-            time={events[0].time}
+            key={index}
+            event={event.summary}
+            location={event.location}
+            description={event.description}
+            month={event.month}
+            date={event.date}
+            time={event.time}
           />
-        ) : (
-          ""
-        )}
-        {events[1] ? (
-          <UpcomingCard
-            event={events[1].summary}
-            location={events[1].location}
-            description={events[1].description}
-            month={events[1].month}
-            date={events[1].date}
-            time={events[1].time}
-          />
-        ) : (
-          ""
-        )}
-        {events[2] ? (
-          <UpcomingCard
-            event={events[2].summary}
-            location={events[2].location}
-            description={events[2].description}
-            month={events[2].month}
-            date={events[2].date}
-            time={events[2].time}
-          />
-        ) : (
-          ""
-        )}
-        {events[3] ? (
-          <UpcomingCard
-            event={events[3].summary}
-            location={events[3].location}
-            description={events[3].description}
-            month={events[3].month}
-            date={events[3].date}
-            time={events[3].time}
-          />
-        ) : (
-          ""
-        )}
+        ))}
       </div>
     </div>
   );
