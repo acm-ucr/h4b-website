@@ -10,9 +10,9 @@ const NotFound = () => {
           <div className="bg-red-500 rounded-full w-5 h-5" />
         </div>
         <div className="bg-biscuits-peach rounded-b-lg pb-7 h-full flex flex-col items-center justify-center">
-          <div className=" flex justify-center">
+          <div className="flex flex-col justify-center">
             <Title text="Error" color="red" />
-            <Title text="4O4" />
+            <Title text="4O4" color="red" />
           </div>
           <div className="text-biscuits-red-200 font-shrikhand md:text-6xl self-center text-2xl">
             Page Not Found

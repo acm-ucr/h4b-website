@@ -82,7 +82,7 @@ const Upcoming = () => {
       ref={ref}
       className={`${
         inView && "animate-fade-left animate-delay-200 "
-      } flex flex-col justify-center text-center my-[5%] w-2/3`}
+      } flex flex-col justify-center text-center my-[5%] w-2/3 gap-y-5`}
     >
       <Title text="Upcoming Events" color="purple" />
       {events.length === 0 && (
