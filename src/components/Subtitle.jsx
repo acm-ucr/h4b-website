@@ -9,7 +9,7 @@ const Subtitle = ({ color, text }) => {
       ref={ref}
       className={`font-bold font-shrikhand text-center text-4xl md:text-6xl ${color} ${
         inView
-          ? `animate-fade-up animate-once animate-duration-[300ms] animate-ease-linear`
+          ? `animate-fade-up animate-once animate-duration-[1500ms] animate-ease-linear`
           : ""
       }`}
     >
