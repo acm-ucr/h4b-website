@@ -12,10 +12,13 @@ const Page = () => {
   const [inView, ref] = useView();
 
   return (
-    <div className="bg-biscuits-green-100 bg-blobs1 md:bg-cover bg-contain flex flex-col items-center gap-y-10 p-4 md:p-10">
+    <div
+      ref={ref}
+      className="bg-biscuits-green-100 bg-blobs1 md:bg-cover bg-contain flex flex-col items-center gap-y-10 p-4 md:p-10"
+    >
       <Title text="About Us" color="red" />
       <Picture x={25} y={25} image={springPicture} alt="Spring 24 Picture" />
-      <div ref={ref} className="w-full">
+      <div className="w-full">
         {ABOUT.map((section, index) => {
           return (
             <div
@@ -37,7 +40,13 @@ const Page = () => {
           );
         })}
       </div>
-      <div className="flex justify-center w-full -mt-4 mb-8">
+      <div
+        className={`flex justify-center w-full -mt-4 mb-8 ${
+          inView
+            ? `animate-fade-up animate-duration-300 animate-ease-linear animate-delay-500`
+            : ""
+        }`}
+      >
         <Button text="GET INVOLVED" link="/involve" />
       </div>
     </div>
