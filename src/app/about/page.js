@@ -33,7 +33,7 @@ const Page = () => {
                 color="text-biscuits-green-200"
                 text={section.subtitle}
               />
-              <div className="mt-4 md:mt-6 text-lg md:text-xl font-inika md:w-2/3 w-10/12 mx-auto">
+              <div className="mt-4 md:mt-6 text-lg md:text-2xl font-inika md:w-2/3 w-10/12 mx-auto">
                 {section.paragraph}
               </div>
             </div>
